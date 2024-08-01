@@ -1,12 +1,12 @@
 import { FunctionComponent } from "react";
-import Hero from "../components/Hero";
-import About1 from "../components/About1";
-import Services from "../components/Services";
-import Process1 from "../components/Process1";
-import FrameComponent from "../components/FrameComponent";
-import FrameComponent1 from "../components/FrameComponent1";
-import Form from "../components/Form";
-import Footer1 from "../components/Footer1";
+import Hero from "../../components/Hero";
+import About1 from "../../components/About1";
+import Services from "../../components/Services";
+import Process1 from "../../components/Process1";
+import FrameComponent from "../../components/FrameComponent";
+import FrameComponent1 from "../../components/FrameComponent1";
+import Form from "../../components/Form";
+import Footer1 from "../../components/Footer1";
 
 const Homepage: FunctionComponent = () => {
   return (
@@ -15,14 +15,14 @@ const Homepage: FunctionComponent = () => {
       <About1 />
       <Services
         contactFormFlexWrap="wrap"
-        group42="/group-42.svg"
-        group42="/group-421.svg"
-        group42="/group-42-1.svg"
-        group42="/group-42-2.svg"
-        uIUXDesign="UI UX Design"
-        uIUXDesign="Web Development"
-        uIUXDesign="Mobile App Development"
-        uIUXDesign="Software Development"
+        group42_1="/group-42.svg"
+        group42_2="/group-421.svg"
+        group42_3="/group-42-1.svg"
+        group42_4="/group-42-2.svg"
+        uIUXDesign1="UI UX Design"
+        uIUXDesign2="Web Development"
+        uIUXDesign3="Mobile App Development"
+        uIUXDesign4="Software Development"
       />
       <Process1 />
       <FrameComponent

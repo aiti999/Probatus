@@ -5,8 +5,8 @@ import {
   useNavigationType,
   useLocation,
 } from "react-router-dom";
-import Homepage from "./pages/Homepage";
-import Homepage1 from "./pages/Homepage1";
+import Homepage from "./pages/Home/Homepage";
+
 
 function App() {
   const action = useNavigationType();
@@ -28,9 +28,9 @@ function App() {
         title = "";
         metaDescription = "";
         break;
-      case "/":
-        title = "";
-        metaDescription = "";
+      case "/about":
+        title = "About";
+        metaDescription = "about info";
         break;
     }
 
@@ -51,7 +51,7 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Homepage />} />
-      <Route path="/" element={<Homepage1 />} />
+      
     </Routes>
   );
 }
