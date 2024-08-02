@@ -1,18 +1,18 @@
 import { FunctionComponent } from "react";
 import Hero from "../../components/Hero";
-import About1 from "../../components/About1";
 import Services from "../../components/Services";
-import Process1 from "../../components/Process1";
+import Process from "../../components/Process";
 import FrameComponent from "../../components/FrameComponent";
-import FrameComponent1 from "../../components/FrameComponent1";
 import Form from "../../components/Form";
-import Footer1 from "../../components/Footer1";
+import Footer from "../../components/Footer";
+import AboutUs from "../../components/AboutUs";
+import Testimonials from "../../components/Testimonials";
 
 const Homepage: FunctionComponent = () => {
   return (
     <div className="w-full relative bg-white overflow-hidden flex flex-col items-start justify-start leading-[normal] tracking-[normal]">
       <Hero />
-      <About1 />
+      <AboutUs/>
       <Services
         contactFormFlexWrap="wrap"
         group42_1="/group-42.svg"
@@ -24,7 +24,7 @@ const Homepage: FunctionComponent = () => {
         uIUXDesign3="Mobile App Development"
         uIUXDesign4="Software Development"
       />
-      <Process1 />
+      <Process />
       <FrameComponent
         whyChooseUs="/why-choose-us1@2x.png"
         whyChooseUsHeight="593px"
@@ -41,7 +41,7 @@ const Homepage: FunctionComponent = () => {
           </h1>
         </div>
       </section>
-      <FrameComponent1 />
+      <Testimonials />
       <div className="self-stretch flex flex-row items-start justify-center pt-0 px-5 pb-20">
         <div className="w-24 flex flex-row items-start justify-between gap-5">
           <img
@@ -57,7 +57,7 @@ const Homepage: FunctionComponent = () => {
         </div>
       </div>
       <Form />
-      <Footer1 />
+      <Footer/>
     </div>
   );
 };

@@ -85,13 +85,8 @@ const Form: FunctionComponent<FormType> = ({ className = "form" }) => {
                     placeholder="Email address"
                     type="text"
                   />
-                  <div className="h-[22px] w-px relative rounded-12xs bg-black hidden" />
-                  <div className="h-[22px] flex-1 relative rounded-12xs min-w-[227px] max-w-full" />
-                  <img
-                    className="h-[18px] w-[18px] relative hidden"
-                    alt=""
-                    src="/arrow-down.svg"
-                  />
+                
+                  
                 </div>
               </div>
             </div>

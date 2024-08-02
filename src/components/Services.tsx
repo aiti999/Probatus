@@ -1,17 +1,17 @@
 import { FunctionComponent, useMemo, type CSSProperties } from "react";
-import Card from "./Card";
+import Card from "./ourServices";
 
 export type ServicesType = {
   className?: string;
   group42?: string;
   uIUXDesign?: string;
+  
 
-  /** Style props */
   contactFormFlexWrap?: CSSProperties["flexWrap"];
 };
 
 const Services: FunctionComponent<ServicesType> = ({
-  className = "",
+  className = "ServicesType",
   contactFormFlexWrap,
   group42,
   uIUXDesign,

@@ -6,7 +6,7 @@ export type HeroBackgroundType = {
 };
 
 const HeroBackground: FunctionComponent<HeroBackgroundType> = ({
-  className = "",
+  className = "heroBackground",
 }) => {
   return (
     <div

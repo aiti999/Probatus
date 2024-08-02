@@ -4,7 +4,7 @@ export type InputFieldType = {
   className?: string;
 };
 
-const InputField: FunctionComponent<InputFieldType> = ({ className = "" }) => {
+const InputField: FunctionComponent<InputFieldType> = ({ className = "InputField" }) => {
   return (
     <div
       className={`self-stretch rounded-xl bg-white flex flex-row items-start justify-start max-w-full text-left text-xs text-black-60 font-body ${className}`}
