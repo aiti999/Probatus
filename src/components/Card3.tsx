@@ -11,7 +11,7 @@ const Card3: FunctionComponent<Card3Type> = ({ className = "" }) => {
     >
       <div className="self-stretch flex flex-col items-start justify-start gap-8 gap-4">
         <img
-          className="w-24 h-4 relative"
+          className="w-236 gap-14 h-54 relative"
           loading="lazy"
           alt=""
           src="/favourite31.svg"
@@ -24,7 +24,7 @@ const Card3: FunctionComponent<Card3Type> = ({ className = "" }) => {
         </div>
         <div className="w-[236px] h-[54px] flex flex-row items-center justify-start gap-3.5 text-gray-900 font-franie">
           <img
-            className="h-11 w-11 relative rounded-[50%] object-cover"
+            className="h-54px w-236px relative rounded-[50%] object-cover"
             loading="lazy"
             alt=""
             src="/oval@2x.png"

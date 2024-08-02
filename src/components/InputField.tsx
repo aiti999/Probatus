@@ -21,22 +21,18 @@ const InputField: FunctionComponent<InputFieldType> = ({ className = "" }) => {
         </div>
         <div className="h-12 flex-1 relative rounded-xl border-black-20 border-[1px] border-solid box-border overflow-hidden max-w-full">
           <div className="absolute top-[15px] left-[16px] h-[18px] flex flex-col items-start justify-start pt-0.5 px-0 pb-0 box-border">
-            <img
-              className="w-[18px] h-[18px] relative overflow-hidden shrink-0"
-              alt=""
-              src="/email-mail.svg"
-            />
+
           </div>
-          <div className="absolute top-[13px] left-[16px] rounded-12xs bg-black w-px h-[22px] hidden" />
+          <div className="absolute left-[16px] rounded-12xs bg-black w-px h-[22px] hidden" />
           <input
-            className="[border:none] [outline:none] font-body text-base bg-[transparent] absolute top-[13px] left-[16px] leading-[140%] text-black-60 text-left inline-block p-0"
+            className="w-[500px] pr-10 py-4 pl-4 [border:none] [outline:none] font-body text-base bg-[transparent] h-[22px] relative leading-[140%] text-black-60 text-left inline-block p-0"
             placeholder="Select Your Service"
             type="text"
           />
           <div className="absolute top-[13px] left-[122px] rounded-12xs bg-black w-px h-[22px] hidden" />
           <div className="absolute top-[13px] left-[164px] rounded-12xs w-[314px] h-[22px]" />
           <img
-            className="absolute top-[15px] left-[478px] w-[18px] h-[18px]"
+            className="absolute cursor-pointer top-[15px] left-[478px] w-[18px] h-[18px]"
             alt=""
             src="/arrow-down.svg"
           />

@@ -5,7 +5,6 @@ export type CardType = {
   group42?: string;
   uIUXDesign?: string;
 
-  /** Style props */
   propHeight?: CSSProperties["height"];
   propWidth?: CSSProperties["width"];
   propDisplay?: CSSProperties["display"];

@@ -7,7 +7,7 @@ export type FooterType = {
 const Footer: FunctionComponent<FooterType> = ({ className = "" }) => {
   return (
     <footer
-      className={`self-stretch overflow-hidden flex flex-col items-start justify-start pt-16 px-0 pb-0 box-border gap-[196px] bg-[url('/public/footer@3x.png')] bg-cover bg-no-repeat bg-[top] max-w-full z-[1] text-left text-base text-white font-body gap-[98px] mq800:pt-[42px] mq800:box-border gap-[49px] ${className}`}
+      className={`self-stretch overflow-hidden flex flex-col items-start justify-start pt-16 px-0 pb-0 box-border gap-[196px] bg-[url('/public/footer@3x.png')] bg-cover bg-no-repeat bg-[top] max-w-full z-[1] text-left text-base text-white font-body mq800:pt-[42px] mq800:box-border ${className}`}
     >
       <div className="self-stretch flex flex-row items-start justify-start py-0 px-20 box-border max-w-full mq800:pl-10 mq800:pr-10 mq800:box-border">
         <div className="flex-1 flex flex-row items-start justify-between max-w-full gap-5 mq450:flex-wrap">
@@ -79,7 +79,11 @@ const Footer: FunctionComponent<FooterType> = ({ className = "" }) => {
             <div className="self-stretch flex flex-col items-start justify-start gap-4 max-w-full text-lightslategray">
               <div className="self-stretch rounded-lg bg-gray1-500 border-gray1-400 border-[1px] border-solid box-border flex flex-row items-center justify-center gap-2 min-h-[44px] whitespace-nowrap max-w-full">
                 <h3 className="m-0 flex-1 relative text-inherit leading-[20px] font-normal font-[inherit] inline-block max-w-[calc(100%_-_28px)]">
-                  Enter Your email
+                  <input
+                  placeholder="Enter Your email"
+                  type="text" 
+                  />
+                
                 </h3>
                 <img
                   className="h-5 w-5 relative overflow-hidden shrink-0"

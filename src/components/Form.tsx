@@ -5,7 +5,7 @@ export type FormType = {
   className?: string;
 };
 
-const Form: FunctionComponent<FormType> = ({ className = "" }) => {
+const Form: FunctionComponent<FormType> = ({ className = "form" }) => {
   return (
     <section
       className={`self-stretch bg-gray1-100 border-lavender-200 border-t-[1px] border-solid box-border overflow-hidden flex flex-row items-start justify-start pt-[78px] px-20 pb-20 max-w-full text-left text-21xl text-gray1-200 font-franie mq800:pt-[51px] mq800:px-10 mq800:pb-[52px] mq800:box-border ${className}`}

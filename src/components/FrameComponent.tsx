@@ -4,7 +4,6 @@ export type FrameComponentType = {
   className?: string;
   whyChooseUs?: string;
 
-  /** Style props */
   whyChooseUsHeight?: CSSProperties["height"];
   whyChooseUsMinHeight?: CSSProperties["minHeight"];
   whyProbatusContentGap?: CSSProperties["gap"];
