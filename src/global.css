@@ -7,22 +7,13 @@
 @tailwind components;
 @tailwind utilities;
 body {
-  @apply leading-[normal] m-0;
+  overflow: scroll;
 }
-*,
-::before,
-::after {
-  border-width: 0;
-}
-/* global.css */
 
-/* Hide scrollbar for Chrome, Safari and Opera */
 body::-webkit-scrollbar {
   display: none;
 }
-
-/* Hide scrollbar for IE, Edge and Firefox */
-body {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+::before,
+::after {
+  border-width: 0;
 }

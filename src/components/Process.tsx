@@ -24,9 +24,9 @@ const Process1: FunctionComponent<Process1Type> = ({ className = "" }) => {
         </div>
         <div className="w-[632px] flex flex-col items-start justify-start min-w-[632px] max-w-full text-base text-dimgray-200 font-body mq1150:min-w-full mq1350:flex-1">
           <div className="self-stretch flex flex-col items-start justify-start gap-2 max-w-full">
-            <div className="self-stretch flex flex-row items-center justify-center py-6 px-2 box-border max-w-full gap-[106px] gap-[53px]">
-              <button className="cursor-pointer [border:none] py-3 px-8 bg-[transparent] h-6 flex-1 flex flex-row items-center justify-between box-border max-w-full gap-5">
-                <h2 className="m-0 w-[328px] relative text-5xl leading-[24px] capitalize font-normal font-franie text-gray1-300 text-left flex items-center max-w-[calc(100%_-_44px)] mq450:text-lgi mq450:leading-[19px]">
+            <div className="self-stretch flex flex-row items-center justify-center py-6 px-2 box-border max-w-full gap-[106px]">
+              <button className="cursor-pointer hover:bg-darkslategray-400 [border:none] py-3 px-8 bg-[transparent] h-8 flex-1 flex flex-row items-center justify-between box-border max-w-full gap-5">
+                <h2 className="m-0 w-[328px] relative text-13xl leading-[24px] capitalize font-normal font-franie text-gray1-300 text-left flex items-center max-w-[calc(100%_-_44px)] mq450:text-lgi mq450:leading-[19px]">
                   Discovery and Planning
                 </h2>
                 <img
@@ -35,8 +35,8 @@ const Process1: FunctionComponent<Process1Type> = ({ className = "" }) => {
                 />
               </button>
             </div>
-            <div className="self-stretch border-darkslategray-500 border-b-[1px] border-solid flex flex-col items-start justify-start pt-0 px-2 pb-[22px]">
-              <div className="self-stretch relative leading-[24px]">
+            <div className="self-stretch border-darkslategray-500 border-b-[1px] flex flex-col items-start justify-start pl-10 pt-0 px-2 pb-[22px]">
+              <div className="self-stretch relative leading-[24px] ">
                 We begin by conducting a thorough discovery phase, collaborating
                 closely with our clients to understand their vision, goals, and
                 requirements. We analyze business objectives, define project
@@ -46,7 +46,7 @@ const Process1: FunctionComponent<Process1Type> = ({ className = "" }) => {
             </div>
           </div>
           <button className="cursor-pointer [border:none] py-3 px-8 bg-[transparent] self-stretch border-darkslategray-500 border-b-[1px] border-solid box-border flex flex-row items-center justify-between min-h-[72px] max-w-full gap-5 hover:bg-darkslategray-400">
-            <h2 className="m-0 w-[475px] relative text-5xl leading-[24px] capitalize font-normal font-franie text-gray1-300 text-left flex items-center max-w-[calc(100%_-_44px)] mq450:text-lgi mq450:leading-[19px]">
+            <h2 className="m-0 w-[475px] relative text-13xl leading-[24px] capitalize font-normal font-franie text-gray1-300 text-left flex items-center max-w-[calc(100%_-_44px)] mq450:text-lgi mq450:leading-[19px]">
               Development and Implementation
             </h2>
             <img
@@ -55,7 +55,7 @@ const Process1: FunctionComponent<Process1Type> = ({ className = "" }) => {
             />
           </button>
           <button className="cursor-pointer [border:none] py-3 px-8 bg-[transparent] self-stretch border-darkslategray-500 border-b-[1px] border-solid box-border flex flex-row items-center justify-between min-h-[72px] max-w-full gap-5 hover:bg-darkslategray-400">
-            <h2 className="m-0 w-[420px] relative text-5xl leading-[24px] capitalize font-normal font-franie text-gray1-300 text-left flex items-center max-w-[calc(100%_-_44px)] mq450:text-lgi mq450:leading-[19px]">
+            <h2 className="m-0 w-[420px] relative text-13xl leading-[24px] capitalize font-normal font-franie text-gray1-300 text-left flex items-center max-w-[calc(100%_-_44px)] mq450:text-lgi mq450:leading-[19px]">
               Quality Assurance and Testing
             </h2>
             <img
@@ -64,7 +64,7 @@ const Process1: FunctionComponent<Process1Type> = ({ className = "" }) => {
             />
           </button>
           <button className="cursor-pointer [border:none] py-3 px-8 bg-[transparent] self-stretch border-darkslategray-500 border-b-[1px] border-solid box-border flex flex-row items-center justify-between min-h-[72px] max-w-full gap-5 hover:bg-darkslategray-400">
-            <h2 className="m-0 w-[343px] relative text-5xl leading-[24px] capitalize font-normal font-franie text-gray1-300 text-left flex items-center max-w-[calc(100%_-_44px)] mq450:text-lgi mq450:leading-[19px]">
+            <h2 className="m-0 w-[343px] relative text-13xl leading-[24px] capitalize font-normal font-franie text-gray1-300 text-left flex items-center max-w-[calc(100%_-_44px)] mq450:text-lgi mq450:leading-[19px]">
               Deployment and Launch
             </h2>
             <img
@@ -73,7 +73,7 @@ const Process1: FunctionComponent<Process1Type> = ({ className = "" }) => {
             />
           </button>
           <button className="cursor-pointer [border:none] py-3 px-8 bg-[transparent] self-stretch border-darkslategray-500 border-b-[1px] border-solid box-border flex flex-row items-center justify-between min-h-[72px] max-w-full gap-5 hover:bg-darkslategray-400">
-            <h2 className="m-0 w-[545px] relative text-5xl leading-[24px] capitalize font-normal font-franie text-gray1-300 text-left flex items-center max-w-[calc(100%_-_44px)] mq450:text-lgi mq450:leading-[19px]">
+            <h2 className="m-0 w-[545px] relative text-13xl leading-[24px] capitalize font-normal font-franie text-gray1-300 text-left flex items-center max-w-[calc(100%_-_44px)] mq450:text-lgi mq450:leading-[19px]">
               Post-Launch Support and Maintenance
             </h2>
             <img

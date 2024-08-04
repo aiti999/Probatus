@@ -9,9 +9,8 @@ export type ServicesType = {
 
   contactFormFlexWrap?: CSSProperties["flexWrap"];
 };
-
 const Services: FunctionComponent<ServicesType> = ({
-  className = "ServicesType",
+  className = "",
   contactFormFlexWrap,
   group42,
   uIUXDesign,

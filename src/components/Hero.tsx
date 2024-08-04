@@ -19,19 +19,19 @@ const Hero: FunctionComponent<HeroType> = ({ className = "" }) => {
           />
           <nav className="m-0 flex flex-col items-start justify-start pt-3 px-0 pb-0 box-border max-w-full mq800:hidden">
             <nav className="m-0 flex flex-row items-start justify-start gap-[15.6px] text-center text-sm text-gainsboro font-body">
-              <a className="[text-decoration:none] cursor-pointer relative leading-[20px] font-medium text-[inherit] inline-block min-w-[41px]">
+              <a className="[text-decoration:none] hover:text-gray-500 cursor-pointer relative leading-[20px] font-medium text-[inherit] inline-block min-w-[41px]">
                 About
               </a>
-              <a className="[text-decoration:none] cursor-pointer relative leading-[20px] font-medium text-[inherit] inline-block min-w-[59px]">
+              <a className="[text-decoration:none] hover:text-gray-500 cursor-pointer relative leading-[20px] font-medium text-[inherit] inline-block min-w-[59px]">
                 Services
               </a>
-              <a className="[text-decoration:none] cursor-pointer relative leading-[20px] font-medium text-[inherit] inline-block min-w-[54px]">
+              <a className="[text-decoration:none] hover:text-gray-500 cursor-pointer relative leading-[20px] font-medium text-[inherit] inline-block min-w-[54px]">
                 Process
               </a>
-              <a className="[text-decoration:none] cursor-pointer relative leading-[20px] font-medium text-[inherit] inline-block min-w-[77px]">
+              <a className="[text-decoration:none] hover:text-gray-500 cursor-pointer relative leading-[20px] font-medium text-[inherit] inline-block min-w-[77px]">
                 Testimonial
               </a>
-              <a className="[text-decoration:none] cursor-pointer relative leading-[20px] font-medium text-[inherit] inline-block min-w-[95px] whitespace-nowrap">
+              <a className="[text-decoration:none] hover:text-gray-500 cursor-pointer relative leading-[20px] font-medium text-[inherit] inline-block min-w-[95px] whitespace-nowrap">
                 Why Probatus
               </a>
             </nav>
@@ -63,7 +63,7 @@ const Hero: FunctionComponent<HeroType> = ({ className = "" }) => {
                 Mobile App Development, IT Consulting, and SaaS Solutions
               </div>
               <div className="self-stretch h-11 flex flex-row items-start justify-center py-0 px-5 box-border">
-                <button className="cursor-pointer border-darkgreen border-[1px] border-solid py-3 px-[43px] bg-lime h-[46px] shadow-[0px_8px_8px_rgba(255,_255,_255,_0.25)_inset,_0px_3px_0px_#0a4516,_0px_3px_3.8px_#11f12d_inset,_0px_4px_4px_#04c41c_inset,_3px_3px_2.2px_rgba(38,_38,_38,_0.25)_inset] rounded-xl box-border overflow-hidden flex flex-row items-start justify-start whitespace-nowrap hover:bg-limegreen hover:border-seagreen hover:border-[1px] hover:border-solid hover:box-border">
+                <button className="cursor-pointer border-darkgreen border-[1px] border-solid py-3 px-[43px] bg-lime h-[46px] shadow-[0px_8px_8px_rgba(255,_255,_255,_0.25)_inset,_0px_3px_0px_#0a4516,_0px_3px_3.8px_#11f12d_inset,_0px_4px_4px_#04c41c_inset,_3px_3px_2.2px_rgba(38,_38,_38,_0.25)_inset] rounded-xl box-border overflow-hidden flex flex-row items-start justify-start whitespace-nowrap hover:bg-green-500 hover:border-seagreen hover:border-[1px] hover:border-solid hover:box-border">
                   <div className="relative text-base leading-[20px] font-medium font-body text-gray1-800 text-left">
                     Explore Our Services
                   </div>
