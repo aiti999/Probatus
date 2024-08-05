@@ -1,56 +1,30 @@
-import { FunctionComponent, useMemo, type CSSProperties } from "react";
+import { FunctionComponent } from "react";
 
 export type FrameComponentType = {
   className?: string;
-  whyChooseUs?: string;
-
-  whyChooseUsHeight?: CSSProperties["height"];
-  whyChooseUsMinHeight?: CSSProperties["minHeight"];
-  whyProbatusContentGap?: CSSProperties["gap"];
 };
 
 const FrameComponent: FunctionComponent<FrameComponentType> = ({
   className = "",
-  whyChooseUs,
-  whyChooseUsHeight,
-  whyChooseUsMinHeight,
-  whyProbatusContentGap,
 }) => {
-  const whyChooseUsStyle: CSSProperties = useMemo(() => {
-    return {
-      height: whyChooseUsHeight,
-      minHeight: whyChooseUsMinHeight,
-    };
-  }, [whyChooseUsHeight, whyChooseUsMinHeight]);
-
-  const whyProbatusContentStyle: CSSProperties = useMemo(() => {
-    return {
-      gap: whyProbatusContentGap,
-    };
-  }, [whyProbatusContentGap]);
-
   return (
     <section
-      className={`self-stretch flex flex-row items-start justify-start pt-0 px-0 pb-[68px] box-border max-w-full text-left text-21xl text-gray1-200 font-franie lg:pb-11 lg:box-border mq1150:pb-[29px] mq1150:box-border ${className}`}
+      className={`self-stretch flex flex-row items-start justify-start pt-[0px] px-[0px] pb-[80px] box-border max-w-full text-left text-[40px] text-[#212121] font-[Franie] lg:pb-[52px] lg:box-border mq450:pb-[34px] mq450:box-border ${className}`}
     >
-      <div className="flex-1 bg-whitesmoke overflow-hidden flex flex-col items-start justify-start p-20 box-border max-w-full mq800:py-[52px] mq800:px-10 mq800:box-border mq1150:pt-[34px] mq1150:pb-[34px] mq1150:box-border">
-        <div className="self-stretch flex flex-row flex-wrap items-start justify-start gap-8 max-w-full gap-4">
+      <div className="flex-1 bg-[#f9f9f9] overflow-hidden flex flex-col items-start justify-start p-[80px] box-border max-w-full mq825:py-[52px] mq825:px-[40px] mq825:box-border mq450:pt-[34px] mq450:pb-[34px] mq450:box-border">
+        <div className="self-stretch flex flex-row flex-wrap items-start justify-start gap-[32px] max-w-full gap-[16px]">
           <img
-            className="h-[605px] flex-1 relative rounded-2xl max-w-full overflow-hidden object-cover min-w-[406px] min-h-[605px] mq800:min-w-full"
+            className="h-[605px] flex-1 relative rounded-[16px] max-w-full overflow-hidden object-cover min-w-[406px] min-h-[605px] mq825:min-w-full"
             loading="lazy"
             alt=""
-            src={whyChooseUs}
-            style={whyChooseUsStyle}
+            src="/why-choose-us@2x.png"
           />
-          <div
-            className="flex-1 flex flex-col items-start justify-start gap-6 min-w-[406px] max-w-full mq800:min-w-full"
-            style={whyProbatusContentStyle}
-          >
-            <div className="self-stretch flex flex-col items-start justify-start gap-4">
-              <h1 className="m-0 self-stretch relative text-inherit tracking-[-0.02em] leading-[56px] font-normal font-[inherit] mq800:text-13xl mq800:leading-[45px] mq1150:text-5xl mq1150:leading-[34px]">
+          <div className="flex-1 flex flex-col items-start justify-start gap-[24px] min-w-[406px] max-w-full mq825:min-w-full">
+            <div className="self-stretch flex flex-col items-start justify-start gap-[16px]">
+              <h1 className="m-[0px] self-stretch relative text-inherit tracking-[-0.02em] leading-[56px] font-normal font-[inherit] mq825:text-[32px] mq825:leading-[45px] mq450:text-[24px] mq450:leading-[34px]">
                 Why Choose Probatus?
               </h1>
-              <div className="self-stretch relative text-base leading-[24px] font-body text-dimgray-200">
+              <div className="self-stretch relative text-[16px] leading-[24px] font-[Inter] text-[#605f5f]">
                 We begin by conducting a thorough discovery phase, collaborating
                 closely with our clients to understand their vision, goals, and
                 requirements. We analyze business objectives, define project
@@ -58,64 +32,64 @@ const FrameComponent: FunctionComponent<FrameComponentType> = ({
                 milestones, and deliverables.
               </div>
             </div>
-            <div className="self-stretch flex flex-row items-start justify-start gap-11 text-base text-dimgray-300 font-body mq800:flex-wrap gap-[22px]">
-              <div className="flex-1 flex flex-col items-center justify-center gap-6 min-w-[189px]">
-                <div className="self-stretch flex flex-col items-start justify-start gap-2">
+            <div className="self-stretch flex flex-row items-start justify-start gap-[44px] text-[16px] text-[#555] font-[Inter] mq825:flex-wrap gap-[22px]">
+              <div className="flex-1 flex flex-col items-center justify-center gap-[24px] min-w-[189px]">
+                <div className="self-stretch flex flex-col items-start justify-start gap-[8px]">
                   <b className="self-stretch relative tracking-[-0.04em] leading-[23px]">
                     Industry Experience
                   </b>
-                  <div className="self-stretch relative text-sm tracking-[-0.04em] leading-[20px] text-dimgray-200">
+                  <div className="self-stretch relative text-[14px] tracking-[-0.04em] leading-[20px] text-[#605f5f]">
                     Benefit from years of expertise in web app development,
                     mobile app development, IT consulting, and SaaS solutions.
                   </div>
                 </div>
-                <div className="self-stretch flex flex-col items-start justify-start gap-2">
+                <div className="self-stretch flex flex-col items-start justify-start gap-[8px]">
                   <b className="self-stretch relative tracking-[-0.04em] leading-[23px]">
                     Expert Team
                   </b>
-                  <div className="self-stretch relative text-sm tracking-[-0.04em] leading-[20px] text-dimgray-200">
+                  <div className="self-stretch relative text-[14px] tracking-[-0.04em] leading-[20px] text-[#605f5f]">
                     Partner with a team of skilled professionals in UI/UX
                     design, frontend and backend development, and database
                     management, staying ahead with the latest technologies.
                   </div>
                 </div>
-                <div className="self-stretch flex flex-col items-start justify-start py-0 px-[3px] gap-2">
+                <div className="self-stretch flex flex-col items-start justify-start py-[0px] px-[3px] gap-[8px]">
                   <b className="w-[187px] relative tracking-[-0.04em] leading-[23px] inline-block">
                     Quality Assurance
                   </b>
-                  <div className="self-stretch relative text-sm tracking-[-0.04em] leading-[20px] text-dimgray-200">
+                  <div className="self-stretch relative text-[14px] tracking-[-0.04em] leading-[20px] text-[#605f5f]">
                     Ensure top-notch quality and reliability in every project
                     with our rigorous testing and meticulous attention to
                     detail.
                   </div>
                 </div>
               </div>
-              <div className="flex-1 flex flex-col items-start justify-start gap-6 min-w-[185px]">
-                <div className="self-stretch flex flex-col items-start justify-start gap-2">
+              <div className="flex-1 flex flex-col items-start justify-start gap-[24px] min-w-[185px]">
+                <div className="self-stretch flex flex-col items-start justify-start gap-[8px]">
                   <b className="w-[187px] relative tracking-[-0.04em] leading-[23px] inline-block">
                     Exceptional Value
                   </b>
-                  <div className="self-stretch relative text-sm tracking-[-0.04em] leading-[20px] text-dimgray-200">
+                  <div className="self-stretch relative text-[14px] tracking-[-0.04em] leading-[20px] text-[#605f5f]">
                     Choose Probatus for a trusted partner dedicated to your
                     success, delivering industry-leading solutions and
                     outstanding client service.
                   </div>
                 </div>
-                <div className="self-stretch flex flex-col items-start justify-start gap-2">
+                <div className="self-stretch flex flex-col items-start justify-start gap-[8px]">
                   <b className="relative tracking-[-0.04em] leading-[23px]">
                     Client-Centric Approach
                   </b>
-                  <div className="self-stretch relative text-sm tracking-[-0.04em] leading-[20px] text-dimgray-200">
+                  <div className="self-stretch relative text-[14px] tracking-[-0.04em] leading-[20px] text-[#605f5f]">
                     Experience collaborative and transparent processes tailored
                     to your goals, leading to long-term partnerships and
                     satisfied clients.
                   </div>
                 </div>
-                <div className="self-stretch flex flex-col items-start justify-start gap-2">
+                <div className="self-stretch flex flex-col items-start justify-start gap-[8px]">
                   <b className="relative tracking-[-0.04em] leading-[22px]">
                     Innovative Solutions
                   </b>
-                  <div className="self-stretch relative text-sm tracking-[-0.04em] leading-[20px] text-dimgray-200">
+                  <div className="self-stretch relative text-[14px] tracking-[-0.04em] leading-[20px] text-[#605f5f]">
                     Drive business growth with our innovative web and mobile
                     applications, strategic IT consulting, and creative
                     problem-solving
@@ -123,8 +97,8 @@ const FrameComponent: FunctionComponent<FrameComponentType> = ({
                 </div>
               </div>
             </div>
-            <button className="cursor-pointer [border:none] py-3 px-14 bg-gray1-200 rounded-xl flex flex-row items-end justify-center whitespace-nowrap hover:bg-dimgray-400">
-              <div className="relative text-base tracking-[-0.01em] leading-[24px] font-medium font-body text-white text-left inline-block min-w-[86px]">
+            <button className="cursor-pointer border-[#1b1b1b] border-[1px] border-solid py-[10px] px-[55px] bg-[#212121] shadow-[0px_0px_0px_4px_rgba(33,_33,_33,_0.12),_0px_-2px_0px_#151515_inset,_0px_2px_0px_#343434_inset] rounded-[12px] overflow-hidden flex flex-row items-end justify-center whitespace-nowrap hover:bg-[#545454] hover:border-[#4d4d4d] hover:border-[1px] hover:border-solid hover:box-border">
+              <div className="relative text-[16px] tracking-[-0.01em] leading-[24px] font-medium font-[Inter] text-[#fff] text-left inline-block min-w-[86px]">
                 Get started
               </div>
             </button>

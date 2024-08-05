@@ -1,169 +1,71 @@
 import { FunctionComponent } from "react";
-import InputField from "./InputField";
 
 export type FormType = {
   className?: string;
 };
 
-const Form: FunctionComponent<FormType> = ({ className = "form" }) => {
+const Form: FunctionComponent<FormType> = ({ className = "" }) => {
   return (
     <section
-      className={`self-stretch bg-gray1-100 border-lavender-200 border-t-[1px] border-solid box-border overflow-hidden flex flex-row items-start justify-start pt-[78px] px-20 pb-20 max-w-full text-left text-21xl text-gray1-200 font-franie mq800:pt-[51px] mq800:px-10 mq800:pb-[52px] mq800:box-border ${className}`}
+      className={`self-stretch bg-[#fcfcfc] border-[#d4d4e7] border-t-[1px] border-solid box-border overflow-hidden flex flex-col items-center justify-center pt-[78px] px-[80px] pb-[80px] max-w-full text-left text-[40px] text-[#212121] font-[Franie] mq825:pt-[51px] mq825:px-[40px] mq825:pb-[52px] mq825:box-border ${className}`}
     >
-      <div className="flex-1 flex flex-row items-start justify-between max-w-full gap-5 lg:flex-wrap lg:justify-center">
-        <div className="w-[464px] flex flex-col items-start justify-start gap-2 min-w-[464px] max-w-full lg:flex-1 mq800:min-w-full">
-          <h1 className="m-0 self-stretch relative text-inherit tracking-[-0.02em] leading-[56px] font-normal font-[inherit] inline-block min-h-[168px] mq800:text-13xl mq800:leading-[45px] mq1150:text-5xl mq1150:leading-[34px]">
+      <div className="self-stretch flex flex-row items-start justify-between max-w-full gap-[20px] lg:flex-wrap lg:justify-center">
+        <div className="w-[464px] flex flex-col items-start justify-start gap-[8px] min-w-[464px] max-w-full lg:flex-1 mq825:min-w-full">
+          <h1 className="m-[0px] self-stretch relative text-inherit tracking-[-0.02em] leading-[56px] font-normal font-[inherit] inline-block min-h-[168px] mq825:text-[32px] mq825:leading-[45px] mq450:text-[24px] mq450:leading-[34px]">
             Please fill out the form to get in touch with us.
           </h1>
-          <div className="w-[406px] relative text-base leading-[24px] font-body text-dimgray-200 flex items-center max-w-full">
+          <div className="w-[406px] relative text-[16px] leading-[24px] font-[Inter] text-[#605f5f] flex items-center max-w-full">
             Have a question or need assistance? Fill out the form below, and
             we'll get back to you promptly. Your inquiries are important to us,
             and we look forward to hearing from you
           </div>
         </div>
-        <div className="w-[514px] flex flex-col items-start justify-start gap-8 min-w-[514px] max-w-full text-xs text-black-60 font-body lg:flex-1 gap-4 mq800:min-w-full">
-          <div className="self-stretch flex flex-col items-end justify-start gap-6 max-w-full">
-            <div className="self-stretch rounded-xl bg-white flex flex-row items-start justify-start max-w-full">
-              <div className="h-[54px] w-[518px] relative rounded border-black-20 border-[3px] border-solid box-border hidden max-w-full" />
-              <div className="h-3.5 hidden flex-row items-start justify-start py-0 pl-0 pr-4 box-border gap-[3px]">
-                <img
-                  className="h-[13px] w-[13px] relative overflow-hidden shrink-0 hidden"
-                  alt=""
-                  src="/exclamation.svg"
-                />
-                <div className="self-stretch relative leading-[120%]">
-                  Message
-                </div>
-              </div>
-              <div className="flex-1 rounded-xl border-black-20 border-[1px] border-solid box-border overflow-hidden flex flex-row items-start justify-start py-2.5 px-[15px] max-w-full [row-gap:20px] mq800:flex-wrap">
-                <div className="hidden flex-row items-start justify-start py-0 pl-0 pr-2">
-                  <img
-                    className="h-[18px] w-[18px] relative overflow-hidden shrink-0"
-                    alt=""
-                    src="/email-mail.svg"
-                  />
-                </div>
-                <div className="h-[22px] w-px relative rounded-12xs bg-black hidden" />
-                <input
-                  className="w-32 [border:none] [outline:none] font-body text-base bg-[transparent] h-[22px] relative leading-[140%] text-black-60 text-left inline-block p-0"
-                  placeholder="Enter Your Name"
-                  type="text"
-                />
-                <div className="h-[22px] w-px relative rounded-12xs bg-black hidden" />
-                <div className="h-[22px] flex-1 relative rounded-12xs min-w-[229px] max-w-full" />
-                <img
-                  className="h-[18px] w-[18px] relative hidden"
-                  alt=""
-                  src="/arrow-down.svg"
-                />
-              </div>
+        <div className="w-[503px] flex flex-col items-end justify-start gap-[32px] min-w-[503px] max-w-full text-[14px] text-[#605f5f] font-[Inter] lg:flex-1 gap-[16px] mq825:min-w-full">
+          <div className="self-stretch flex flex-col items-start justify-start gap-[12px] max-w-full">
+            <div className="self-stretch rounded-[4px] bg-[#f8f8f8] border-[#e6e6e6] border-[1px] border-solid box-border flex flex-row items-center justify-start py-[8px] px-[7px] max-w-full">
+              <input
+                className="w-full [border:none] [outline:none] font-medium font-[Inter] text-[14px] bg-[transparent] h-[20px] flex-1 relative leading-[20px] text-[#605f5f] text-left inline-block min-w-[250px] max-w-full p-[0px]"
+                placeholder="Name"
+                type="text"
+              />
             </div>
-            <div className="self-stretch rounded-xl bg-white flex flex-row items-start justify-start max-w-full">
-              <div className="h-[46px] flex-1 rounded-xl flex flex-row items-start justify-start pt-0 px-0 pb-0 box-border max-w-full mq800:h-auto">
-                <div className="h-[54px] w-[520px] relative rounded border-black-20 border-[3px] border-solid box-border hidden max-w-full" />
-                <div className="h-3.5 hidden flex-row items-start justify-start py-0 pl-0 pr-4 box-border gap-[3px]">
-                  <img
-                    className="h-[13px] w-[13px] relative overflow-hidden shrink-0 hidden"
-                    alt=""
-                    src="/exclamation.svg"
-                  />
-                  <div className="self-stretch relative leading-[120%]">
-                    Message
-                  </div>
-                </div>
-                <div className="flex-1 rounded-xl border-black-20 border-[1px] border-solid box-border overflow-hidden flex flex-row items-start justify-start py-[11px] px-[15px] max-w-full [row-gap:20px] shrink-0 mq800:flex-wrap">
-                  <div className="flex flex-col items-start justify-start pt-0.5 pb-0 pl-0 pr-2">
-                    <img
-                      className="w-[18px] h-[18px] relative overflow-hidden shrink-0"
-                      alt=""
-                      src="/email-mail.svg"
-                    />
-                  </div>
-                  <div className="h-[22px] w-px relative rounded-12xs bg-black hidden" />
-                  <input
-                    className="w-[106px] [border:none] [outline:none] font-body text-base bg-[transparent] h-[22px] relative leading-[140%] text-black-60 text-left inline-block p-0"
-                    placeholder="Email address"
-                    type="text"
-                  />
-                
-                  
-                </div>
-              </div>
+            <div className="self-stretch rounded-[4px] bg-[#f8f8f8] border-[#e6e6e6] border-[1px] border-solid box-border flex flex-row items-center justify-start py-[0px] pl-[0px] pr-[14px] gap-[8px] min-h-[40px] max-w-full">
+              <h2 className="m-[0px] flex-1 relative text-inherit leading-[20px] font-medium font-[inherit] inline-block max-w-[calc(100%_-_28px)]">
+                Email address
+              </h2>
+              <img
+                className="h-[20px] w-[20px] relative overflow-hidden shrink-0"
+                alt=""
+                src="/frame-7.svg"
+              />
             </div>
-            <div className="self-stretch rounded-xl flex flex-row items-start justify-start max-w-full">
-              <div className="h-[54px] w-[518px] relative rounded border-black-20 border-[3px] border-solid box-border hidden max-w-full" />
-              <div className="h-3.5 hidden flex-row items-start justify-start py-0 pl-0 pr-4 box-border gap-[3px]">
-                <img
-                  className="h-[13px] w-[13px] relative overflow-hidden shrink-0 hidden"
-                  alt=""
-                  src="/exclamation.svg"
-                />
-                <div className="self-stretch relative leading-[120%]">
-                  Message
-                </div>
-              </div>
-              <div className="flex-1 rounded-xl bg-white border-black-20 border-[1px] border-solid box-border overflow-hidden flex flex-row items-start justify-start py-2.5 px-[15px] max-w-full [row-gap:20px] mq800:flex-wrap">
-                <div className="hidden flex-row items-start justify-start py-0 pl-0 pr-2">
-                  <img
-                    className="h-[18px] w-[18px] relative overflow-hidden shrink-0"
-                    alt=""
-                    src="/email-mail.svg"
-                  />
-                </div>
-                <div className="h-[22px] w-px relative rounded-12xs bg-black hidden" />
-                <input
-                  className="w-[194px] [border:none] [outline:none] font-body text-base bg-[transparent] h-[22px] relative leading-[140%] text-black-60 text-left inline-block p-0"
-                  placeholder="Enter Your Phone number "
-                  type="text"
-                />
-                <div className="h-[22px] w-px relative rounded-12xs bg-black hidden" />
-                <div className="h-[22px] flex-1 relative rounded-12xs min-w-[186px]" />
-                <img
-                  className="h-[18px] w-[18px] relative hidden"
-                  alt=""
-                  src="/arrow-down.svg"
-                />
-              </div>
+            <div className="self-stretch rounded-[4px] bg-[#f8f8f8] border-[#e6e6e6] border-[1px] border-solid box-border flex flex-row items-center justify-start py-[8px] px-[7px] max-w-full">
+              <input
+                className="w-full [border:none] [outline:none] font-medium font-[Inter] text-[14px] bg-[transparent] h-[20px] flex-1 relative leading-[20px] text-[#605f5f] text-left inline-block min-w-[250px] max-w-full p-[0px]"
+                placeholder="Phone number "
+                type="text"
+              />
             </div>
-            <InputField />
-            <div className="self-stretch rounded-xl bg-white flex flex-row items-start justify-start max-w-full">
-              <div className="h-[54px] w-[518px] relative rounded border-black-20 border-[3px] border-solid box-border hidden max-w-full" />
-              <div className="h-3.5 hidden flex-row items-start justify-start py-0 pl-0 pr-4 box-border gap-[3px]">
-                <img
-                  className="h-[13px] w-[13px] relative overflow-hidden shrink-0 hidden"
-                  alt=""
-                  src="/exclamation.svg"
-                />
-                <div className="self-stretch relative leading-[120%]">
-                  Message
-                </div>
-              </div>
-              <div className="flex-1 rounded-xl border-black-20 border-[1px] border-solid box-border overflow-hidden flex flex-row items-start justify-start py-2.5 px-[15px] max-w-full">
-                <div className="hidden flex-row items-start justify-start py-0 pl-0 pr-2">
-                  <img
-                    className="h-[18px] w-[18px] relative overflow-hidden shrink-0"
-                    alt=""
-                    src="/email-mail.svg"
-                  />
-                </div>
-                <div className="h-[22px] w-px relative rounded-12xs bg-black hidden" />
-                <input
-                  className="w-[469px] [border:none] [outline:none] font-body text-base bg-[transparent] h-36 relative leading-[140%] text-black-60 text-left inline-block max-w-[calc(100%_-_11px)] p-0"
-                  placeholder="Enter Your Message"
-                  type="text"
-                />
-                <div className="h-[22px] w-px relative rounded-12xs bg-black hidden" />
-                <div className="h-[22px] w-[11px] relative rounded-12xs" />
-                <img
-                  className="h-[18px] w-[18px] relative hidden"
-                  alt=""
-                  src="/arrow-down.svg"
-                />
-              </div>
+            <div className="self-stretch rounded-[4px] bg-[#f8f8f8] border-[#e6e6e6] border-[1px] border-solid box-border flex flex-row items-center justify-start py-[0px] pl-[0px] pr-[14px] gap-[8px] min-h-[40px] max-w-full">
+              <h2 className="m-[0px] flex-1 relative text-inherit leading-[20px] font-medium font-[inherit] inline-block max-w-[calc(100%_-_28px)]">
+                Select Your Service
+              </h2>
+              <img
+                className="h-[20px] w-[20px] relative"
+                loading="lazy"
+                alt=""
+                src="/frame2.svg"
+              />
             </div>
+            <textarea
+              className="border-[#e6e6e6] border-[1px] border-solid bg-[#f8f8f8] h-[130px] w-auto [outline:none] self-stretch rounded-[4px] box-border flex flex-row items-start justify-start py-[10px] px-[8px] font-[Inter] font-medium text-[14px] text-[#605f5f]"
+              placeholder="Message"
+              rows={7}
+              cols={25}
+            />
           </div>
-          <button className="cursor-pointer [border:none] py-3 px-5 bg-gray1-200 self-stretch rounded-xl flex flex-row items-start justify-center hover:bg-dimgray-400">
-            <div className="relative text-base tracking-[-0.01em] leading-[24px] font-medium font-body text-white text-left">
+          <button className="cursor-pointer border-[#1b1b1b] border-[1px] border-solid py-[10px] px-[20px] bg-[#212121] self-stretch shadow-[0px_0px_0px_4px_rgba(33,_33,_33,_0.12),_0px_-2px_0px_#151515_inset,_0px_2px_0px_#343434_inset] rounded-[12px] overflow-hidden flex flex-row items-end justify-center hover:bg-[#545454] hover:border-[#4d4d4d] hover:border-[1px] hover:border-solid hover:box-border">
+            <div className="relative text-[16px] tracking-[-0.01em] leading-[24px] font-medium font-[Inter] text-[#fff] text-left">
               Get Free Quotation
             </div>
           </button>
