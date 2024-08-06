@@ -23,7 +23,7 @@ const Services: FunctionComponent<ServicesType> = ({ className = "" }) => {
                 src="/group-42.svg"
               />
               <div className="self-stretch flex flex-col items-center justify-start gap-[8px]">
-                <div className="w-[130px] relative leading-[24px] inline-block">
+                <div className="w-[130px] pl-9 font-bold relative leading-[24px] inline-block">
                   UI UX Design
                 </div>
                 <div className="self-stretch relative text-[14px] tracking-[-0.02em] leading-[20px] font-[Inter] text-[#605f5f] text-center">{`Leverage our expertise in web development to create stunning and functional websites tailored to your business needs. `}</div>
@@ -39,7 +39,7 @@ const Services: FunctionComponent<ServicesType> = ({ className = "" }) => {
                 src="/group-421.svg"
               />
               <div className="self-stretch flex flex-col items-center justify-start gap-[8px]">
-                <div className="w-[194px] relative leading-[24px] inline-block">
+                <div className="w-[194px] pl-12 font-bold relative leading-[24px] inline-block">
                   Web Development
                 </div>
                 <div className="self-stretch relative text-[14px] tracking-[-0.02em] leading-[20px] font-[Inter] text-[#605f5f] text-center">{`Leverage our expertise in web development to create stunning and functional websites tailored to your business needs. `}</div>
@@ -54,7 +54,7 @@ const Services: FunctionComponent<ServicesType> = ({ className = "" }) => {
                 src="/group-42-1.svg"
               />
               <div className="self-stretch flex flex-col items-center justify-start gap-[8px]">
-                <div className="w-[189px] relative leading-[24px] inline-block">
+                <div className="w-[189px] pl-12 font-bold  relative leading-[24px] inline-block">
                   App Development
                 </div>
                 <div className="self-stretch relative text-[14px] tracking-[-0.02em] leading-[20px] font-[Inter] text-[#605f5f] text-center">{`Leverage our expertise in web development to create stunning and functional websites tailored to your business needs. `}</div>
@@ -69,7 +69,7 @@ const Services: FunctionComponent<ServicesType> = ({ className = "" }) => {
                 src="/group-42-2.svg"
               />
               <div className="w-[239px] flex flex-col items-center justify-start gap-[8px]">
-                <div className="self-stretch relative leading-[24px]">
+                <div className="self-stretch pl-12 font-bold  relative leading-[24px]">
                   Software Development
                 </div>
                 <div className="self-stretch relative text-[14px] tracking-[-0.02em] leading-[20px] font-[Inter] text-[#605f5f] text-center">{`Leverage our expertise in web development to create stunning and functional websites tailored to your business needs. `}</div>

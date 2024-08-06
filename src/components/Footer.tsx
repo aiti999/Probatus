@@ -43,27 +43,35 @@ const Footer: FunctionComponent<FooterType> = ({ className = "" }) => {
                 Connect With Us
               </div>
               <div className="flex flex-row items-start justify-start pt-[0px] px-[0px] pb-[3px] gap-[18px]">
+                <a href="https://www.linkedin.com" target="blank">
                 <img
                   className="h-[24px] w-[24px] relative overflow-hidden shrink-0 min-h-[24px]"
                   loading="lazy"
                   alt=""
                   src="/linkedinboxline.svg"
                 />
+                </a>
+                <a href="https://www.instagram.com" target="blank">
                 <img
                   className="h-[24px] w-[24px] relative overflow-hidden shrink-0 min-h-[24px]"
                   alt=""
                   src="/instagramline.svg"
                 />
-                <img
-                  className="h-[24px] w-[24px] relative overflow-hidden shrink-0 min-h-[24px]"
-                  alt=""
-                  src="/facebookcircleline.svg"
-                />
+                </a>
+                <a href="https://www.facebook.com" target="_blank">
+                  <img
+                    className="h-[24px] w-[24px] relative overflow-hidden shrink-0 min-h-[24px]"
+                    alt=""
+                    src="/facebookcircleline.svg"
+                  />
+                </a>
+                <a href="https://twitter.com" target="blank">
                 <img
                   className="h-[24px] w-[24px] relative overflow-hidden shrink-0 min-h-[24px]"
                   alt=""
                   src="/twitterxline.svg"
                 />
+                </a>
               </div>
             </div>
           </div>

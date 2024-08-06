@@ -30,7 +30,7 @@ const Form: FunctionComponent<FormType> = ({ className = "" }) => {
               />
             </div>
             <div className="self-stretch rounded-[4px] bg-[#f8f8f8] border-[#e6e6e6] border-[1px] border-solid box-border flex flex-row items-center justify-start py-[0px] pl-[0px] pr-[14px] gap-[8px] min-h-[40px] max-w-full">
-              <h2 className="m-[0px] flex-1 relative text-inherit leading-[20px] font-medium font-[inherit] inline-block max-w-[calc(100%_-_28px)]">
+              <h2 className="m-[0px] flex-1 pl-2 relative text-inherit leading-[20px] font-medium font-[inherit] inline-block max-w-[calc(100%_-_28px)]">
                 Email address
               </h2>
               <img
@@ -47,7 +47,7 @@ const Form: FunctionComponent<FormType> = ({ className = "" }) => {
               />
             </div>
             <div className="self-stretch rounded-[4px] bg-[#f8f8f8] border-[#e6e6e6] border-[1px] border-solid box-border flex flex-row items-center justify-start py-[0px] pl-[0px] pr-[14px] gap-[8px] min-h-[40px] max-w-full">
-              <h2 className="m-[0px] flex-1 relative text-inherit leading-[20px] font-medium font-[inherit] inline-block max-w-[calc(100%_-_28px)]">
+              <h2 className="m-[0px] flex-1 pl-2 relative text-inherit leading-[20px] font-medium font-[inherit] inline-block max-w-[calc(100%_-_28px)]">
                 Select Your Service
               </h2>
               <img
@@ -57,12 +57,11 @@ const Form: FunctionComponent<FormType> = ({ className = "" }) => {
                 src="/frame2.svg"
               />
             </div>
-            <textarea
-              className="border-[#e6e6e6] border-[1px] border-solid bg-[#f8f8f8] h-[130px] w-auto [outline:none] self-stretch rounded-[4px] box-border flex flex-row items-start justify-start py-[10px] px-[8px] font-[Inter] font-medium text-[14px] text-[#605f5f]"
+            <input type="text"
+              className="border-[#e6e6e6] border-[1px] pb-20 border-solid bg-[#f8f8f8] h-[130px] w-auto [outline:none] self-stretch rounded-[4px] box-border flex flex-row items-start justify-start py-[10px] px-[8px] font-[Inter] font-medium text-[14px] text-[#605f5f]"
               placeholder="Message"
-              rows={7}
-              cols={25}
-            />
+              />
+          
           </div>
           <button className="cursor-pointer border-[#1b1b1b] border-[1px] border-solid py-[10px] px-[20px] bg-[#212121] self-stretch shadow-[0px_0px_0px_4px_rgba(33,_33,_33,_0.12),_0px_-2px_0px_#151515_inset,_0px_2px_0px_#343434_inset] rounded-[12px] overflow-hidden flex flex-row items-end justify-center hover:bg-[#545454] hover:border-[#4d4d4d] hover:border-[1px] hover:border-solid hover:box-border">
             <div className="relative text-[16px] tracking-[-0.01em] leading-[24px] font-medium font-[Inter] text-[#fff] text-left">

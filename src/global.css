@@ -1,12 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Franie:wght@400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Geist:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 body {
   @apply leading-[normal] m-0;
 }
+
+.scroll-container {
+  height: 100vh;
+  overflow-y: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari, and Opera */
+}
+
 *,
 ::before,
 ::after {

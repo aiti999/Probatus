@@ -37,7 +37,7 @@ const Component: FunctionComponent<ComponentType> = ({ className = "" }) => {
         </nav>
         <div className="h-[38px] flex flex-col items-start justify-start pt-[6px] px-[0px] pb-[0px] box-border">
           <button className="cursor-pointer border-[#1f1e1e] border-[1px] border-solid py-[6px] px-[12px] bg-[#171717] h-[34px] rounded-[12px] box-border flex flex-row items-start justify-start gap-[5px]">
-            <a className="[text-decoration:none] relative text-[14px] leading-[20px] capitalize font-[Inter] text-[#e0dfe1] text-left inline-block min-w-[77px] whitespace-nowrap">
+            <a className="[text-decoration:none] hover:border-neutral-600 relative text-[14px] leading-[20px] capitalize font-[Inter] text-[#e0dfe1] text-left inline-block min-w-[77px] whitespace-nowrap">
               Book a Call
             </a>
             <div className="flex flex-col items-start justify-start pt-[7px] px-[0px] pb-[0px]">
