@@ -6,7 +6,7 @@ export type Testimonials = {
 };
 
 const Testimonials: FunctionComponent<Testimonials> = ({
-  className = "",
+  
 }) => {
   return (
     <section

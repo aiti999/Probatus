@@ -3,8 +3,11 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
-      spacing: {},
+      fontSize: {
+        '56px': '56px',
+      },
     },
+
     fontSize: {
       inherit: "inherit",
     },

@@ -1,6 +1,6 @@
 import { FunctionComponent } from "react";
 import Component from "../components/Hero";
-
+import HeroBackground from "../components/HeroBackground";
 import About from "../components/About";
 import Services from "../components/Services";
 import WorkSection from "../components/WorkSection";
@@ -15,6 +15,7 @@ const Homepage: FunctionComponent = () => {
     <div className="w-full relative bg-[#fff] overflow-hidden flex flex-col items-start justify-start pt-[1px] px-[0px] pb-[0px] box-border leading-[normal] tracking-[normal]">
       <section className="self-stretch h-[812px] flex flex-col items-start justify-start pt-[191px] px-[0px] pb-[254px] box-border gap-[112px] bg-[url('/public/hero@3x.png')] bg-cover bg-no-repeat bg-[top] [mix-blend-mode:linear-burn] max-w-full lg:pt-[124px] lg:pb-[165px] lg:box-border gap-[56px] mq825:pt-[81px] mq825:pb-[107px] mq825:box-border gap-[28px]">
         <Component />
+        <HeroBackground/>
       </section>
       <About />
       <Services />
