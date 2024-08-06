@@ -7,7 +7,7 @@ export type FooterType = {
 const Footer: FunctionComponent<FooterType> = ({ className = "" }) => {
   return (
     <footer
-      className={`self-stretch overflow-hidden flex flex-col items-start justify-start pt-[64px] px-[0px] pb-[0px] box-border gap-[196px] bg-[url('/public/footer@3x.png')] bg-cover bg-no-repeat bg-[top] max-w-full z-[1] text-left text-[16px] text-[#fff] font-[Inter] gap-[98px] mq825:pt-[42px] mq825:box-border gap-[49px] ${className}`}
+      className={`self-stretch overflow-hidden flex flex-col items-start justify-start pt-[64px] px-[0px] pb-[0px] box-border gap-[196px] bg-[url('/public/footer@3x.png')] bg-cover bg-no-repeat bg-[top] max-w-full z-[1] text-left text-[16px] text-[#fff] font-[Inter]  mq825:pt-[42px] mq825:box-border  ${className}`}
     >
       <div className="self-stretch flex flex-row items-start justify-start py-[0px] px-[80px] box-border max-w-full mq825:pl-[40px] mq825:pr-[40px] mq825:box-border">
         <div className="flex-1 flex flex-row items-start justify-between max-w-full gap-[20px] lg:flex-wrap">

@@ -24,7 +24,7 @@ const Process: FunctionComponent<ProcessType> = ({ className = "" }) => {
         </div>
         <div className="w-[632px] flex flex-col items-start justify-start min-w-[632px] max-w-full text-[24px] text-[#1a1a1a] lg:min-w-full mq1400:flex-1">
           <div className="self-stretch flex flex-col items-start justify-start gap-[8px] max-w-full">
-            <div className="self-stretch flex flex-row items-center justify-center py-[24px] px-[8px] box-border max-w-full gap-[106px] gap-[53px]">
+            <div className="self-stretch flex flex-row items-center justify-center py-[24px] px-[8px] box-border max-w-full gap-[106px] ">
               <div className="flex-1 flex flex-row items-center justify-between max-w-full gap-[20px]">
                 <h2 className="m-[0px] w-[328px] relative text-inherit leading-[24px] capitalize font-normal font-[inherit] flex items-center max-w-[calc(100%_-_44px)] mq450:text-[19px] mq450:leading-[19px]">
                   Discovery and Planning

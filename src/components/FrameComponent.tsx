@@ -12,7 +12,7 @@ const FrameComponent: FunctionComponent<FrameComponentType> = ({
       className={`self-stretch flex flex-row items-start justify-start pt-[0px] px-[0px] pb-[80px] box-border max-w-full text-left text-[40px] text-[#212121] font-[Franie] lg:pb-[52px] lg:box-border mq450:pb-[34px] mq450:box-border ${className}`}
     >
       <div className="flex-1 bg-[#f9f9f9] overflow-hidden flex flex-col items-start justify-start p-[80px] box-border max-w-full mq825:py-[52px] mq825:px-[40px] mq825:box-border mq450:pt-[34px] mq450:pb-[34px] mq450:box-border">
-        <div className="self-stretch flex flex-row flex-wrap items-start justify-start gap-[32px] max-w-full gap-[16px]">
+        <div className="self-stretch flex flex-row flex-wrap items-start justify-start gap-[32px] max-w-full ">
           <img
             className="h-[605px] flex-1 relative rounded-[16px] max-w-full overflow-hidden object-cover min-w-[406px] min-h-[605px] mq825:min-w-full"
             loading="lazy"
@@ -32,7 +32,7 @@ const FrameComponent: FunctionComponent<FrameComponentType> = ({
                 milestones, and deliverables.
               </div>
             </div>
-            <div className="self-stretch flex flex-row items-start justify-start gap-[44px] text-[16px] text-[#555] font-[Inter] mq825:flex-wrap gap-[22px]">
+            <div className="self-stretch flex flex-row items-start justify-start gap-[44px] text-[16px] text-[#555] font-[Inter] mq825:flex-wrap">
               <div className="flex-1 flex flex-col items-center justify-center gap-[24px] min-w-[189px]">
                 <div className="self-stretch flex flex-col items-start justify-start gap-[8px]">
                   <b className="self-stretch relative tracking-[-0.04em] leading-[23px]">

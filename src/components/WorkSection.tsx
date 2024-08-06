@@ -11,7 +11,7 @@ const WorkSection: FunctionComponent<WorkSectionType> = ({
     <section
       className={`self-stretch overflow-hidden flex flex-row items-center justify-start py-[64px] px-[80px] box-border max-w-full z-[1] text-center text-[56px] text-[#212121] font-[Franie] lg:pt-[27px] lg:pb-[27px] lg:box-border mq825:pl-[40px] mq825:pr-[40px] mq825:box-border mq450:pt-[20px] mq450:pb-[20px] mq450:box-border mq1400:pt-[42px] mq1400:pb-[42px] mq1400:box-border ${className}`}
     >
-      <div className="flex-1 flex flex-col items-center justify-start gap-[64px] max-w-full gap-[32px] gap-[16px]">
+      <div className="flex-1 flex flex-col items-center justify-start gap-[64px] max-w-full ">
         <div className="w-[547px] flex flex-col items-center justify-center gap-[16px] max-w-full">
           <h1 className="m-[0px] self-stretch relative text-inherit tracking-[-0.02em] leading-[72px] font-normal font-[inherit] mq825:text-[45px] mq825:leading-[58px] mq450:text-[34px] mq450:leading-[43px]">
             Our recent Work
@@ -24,8 +24,8 @@ const WorkSection: FunctionComponent<WorkSectionType> = ({
             lifecycle.
           </div>
         </div>
-        <div className="self-stretch flex flex-col items-start justify-start gap-[32px] max-w-full text-left text-[20px] text-[#101010] gap-[16px]">
-          <div className="self-stretch flex flex-row items-center justify-start gap-[32px] max-w-full gap-[16px] mq1400:flex-wrap">
+        <div className="self-stretch flex flex-col items-start justify-start gap-[32px] max-w-full text-left text-[20px] text-[#101010] ">
+          <div className="self-stretch flex flex-row items-center justify-start gap-[32px] max-w-full  mq1400:flex-wrap">
             <div className="w-[475px] flex flex-col items-start justify-start gap-[16px] min-w-[475px] max-w-full mq825:min-w-full mq1400:flex-1">
               <img
                 className="self-stretch h-[485px] relative rounded-[8px] max-w-full overflow-hidden shrink-0 object-cover"
@@ -37,7 +37,7 @@ const WorkSection: FunctionComponent<WorkSectionType> = ({
                 <h3 className="m-[0px] self-stretch relative text-inherit leading-[24px] font-normal font-[inherit] mq450:text-[16px] mq450:leading-[19px]">
                   Pet Health Management App
                 </h3>
-                <div className="self-stretch relative text-[16px] tracking-[0.02em] leading-[24px] capitalize font-[Inter] text-[#4d4d4d]">{`PetPal’s mobile app simplifies the process of finding and consulting veterinarians, offering a user-friendly interface and robust functionality. `}</div>
+                <div className="self-stretch relative text-[16px] tracking-[0.02em] leading-[24px] capitalize font-[Inter] text-[#4d4d4d]">{`PetPal's mobile app simplifies the process of finding and consulting veterinarians, offering a user-friendly interface and robust functionality. `}</div>
               </div>
             </div>
             <div className="flex-1 flex flex-col items-start justify-start gap-[16px] min-w-[502px] max-w-full mq825:min-w-full">
@@ -60,7 +60,7 @@ const WorkSection: FunctionComponent<WorkSectionType> = ({
               </div>
             </div>
           </div>
-          <div className="self-stretch flex flex-row items-center justify-start gap-[32px] max-w-full gap-[16px] mq1400:flex-wrap">
+          <div className="self-stretch flex flex-row items-center justify-start gap-[32px] max-w-full  mq1400:flex-wrap">
             <div className="w-[733px] flex flex-col items-start justify-start gap-[16px] min-w-[733px] max-w-full lg:min-w-full mq1400:flex-1">
               <img
                 className="self-stretch h-[485px] relative rounded-[8px] max-w-full overflow-hidden shrink-0 object-cover"

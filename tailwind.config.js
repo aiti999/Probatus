@@ -6,6 +6,9 @@ module.exports = {
       fontSize: {
         '56px': '56px',
       },
+      fontFamily: {
+        sans: ['PT Sans', 'sans-serif'],
+      },
     },
 
     fontSize: {
