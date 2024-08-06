@@ -8,9 +8,9 @@ export type Card1Type = {
 const Card1: FunctionComponent<Card1Type> = ({ className = "", oval }) => {
   return (
     <div
-      className={`w-[514px] bg-[#fff] border-[#f3efff] border-[1px] border-solid box-border shrink-0 flex flex-col items-start justify-start py-[30px] px-[31px] max-w-full text-left text-[16px] text-[#605f5f] font-[Inter] mq825:w-[calc(100%_-_40px)] ${className}`}
+      className={`w-[514px] bg-[#fff] border-[#f3efff] border-[1px] border-solid box-border shrink-0 flex flex-col items-start justify-start py-[50px] px-[31px] max-w-full text-left text-[16px] text-[#605f5f] font-[Inter] mq825:w-[calc(100%_-_40px)] ${className}`}
     >
-      <div className="self-stretch flex flex-col items-start justify-start gap-[32px] gap-[16px]">
+      <div className="self-stretch flex flex-col items-start justify-start gap-[32px]">
         <img
           className="w-[96px] h-[16px] relative"
           loading="lazy"
@@ -23,9 +23,9 @@ const Card1: FunctionComponent<Card1Type> = ({ className = "", oval }) => {
           retention and a 20% boost in app ratings. Client D's app is now a
           user-favorite, driving higher engagement and satisfaction.
         </div>
-        <div className="w-[236px] h-[54px] flex flex-row items-center justify-start gap-[14px] text-[#18181b] font-[Franie]">
+        <div className="w-[236px] h-[54px] flex flex-row items-center justify-start  text-[#18181b] font-[Franie]">
           <img
-            className="h-[44px] w-[44px] relative rounded-[50%] object-cover"
+            className="h-[120px] w-[120px]  relative rounded-[50%] object-cover"
             loading="lazy"
             alt=""
             src={oval}
