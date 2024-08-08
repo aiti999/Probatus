@@ -6,26 +6,10 @@ export type AboutUsType = {
 
 // Define button data
 const buttonData = [
-  {
-    label: "Introduction",
-    content:
-      "At Probatus, we believe in the power of expertise and dedication. Our journey began with a vision to provide proven, tried, and tested solutions that empower businesses to achieve success. With a team of seasoned professionals and a commitment to quality, we've earned a reputation for delivering results that exceed expectations.",
-  },
-  {
-    label: "Mission",
-    content:
-      "Our mission is to drive innovation and deliver solutions that create long-term value for our clients. We strive to be a trusted partner, providing exceptional service and leveraging our expertise to help businesses thrive in a competitive landscape.",
-  },
-  {
-    label: "Core Values",
-    content:
-      "Integrity, Excellence, and Innovation are the core values that guide us in every aspect of our work. We are committed to maintaining the highest standards of professionalism and delivering outstanding results through continuous improvement and creativity.",
-  },
-  {
-    label: "Key Strengths",
-    content:
-      "Our key strengths include a highly skilled team, a customer-centric approach, and a proven track record of successful project delivery. We excel in adapting to changing market demands and providing tailored solutions that meet our clients' unique needs.",
-  },
+  { label: "Introduction", content: "At Probatus, we believe in the power of expertise and dedication. Our journey began with a vision to provide proven, tried, and tested solutions that empower businesses to achieve success. With a team of seasoned professionals and a commitment to quality, we've earned a reputation for delivering results that exceed expectations." },
+  { label: "Mission", content: "Our mission is to drive innovation and deliver solutions that create long-term value for our clients. We strive to be a trusted partner, providing exceptional service and leveraging our expertise to help businesses thrive in a competitive landscape." },
+  { label: "Core Values", content: "Integrity, Excellence, and Innovation are the core values that guide us in every aspect of our work. We are committed to maintaining the highest standards of professionalism and delivering outstanding results through continuous improvement and creativity." },
+  { label: "Key Strengths", content: "Our key strengths include a highly skilled team, a customer-centric approach, and a proven track record of successful project delivery. We excel in adapting to changing market demands and providing tailored solutions that meet our clients' unique needs." }
 ];
 
 const AboutUs: FunctionComponent<AboutUsType> = ({ className = "" }) => {
@@ -76,8 +60,7 @@ const AboutUs: FunctionComponent<AboutUsType> = ({ className = "" }) => {
       <div className="w-[730px] flex flex-col items-start justify-start py-[0px] px-[0px] box-border gap-[24px] min-w-[730px] max-w-full lg:min-w-full mq1400:flex-1">
         <div className="self-stretch flex flex-col items-start justify-start gap-[16px]">
           <h1 className="m-[0px] w-[272px] relative text-inherit tracking-[-0.02em] leading-[56px] font-normal font-[inherit] inline-block mq825:text-[32px] mq825:leading-[45px] mq450:text-[24px] mq450:leading-[34px]">
-            {buttonData.find((btn) => btn.content === selectedContent)?.label ||
-              "Introduction"}
+            {buttonData.find((btn) => btn.content === selectedContent)?.label || "Introduction"}
           </h1>
           <div className="self-stretch relative text-[16px] tracking-[-0.02em] leading-[24px] font-[Inter] text-[#605f5f]">
             {selectedContent}

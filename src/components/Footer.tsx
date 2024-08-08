@@ -85,11 +85,11 @@ const Footer: FunctionComponent<FooterType> = ({ className = "" }) => {
             </div>
             <div className="self-stretch flex flex-col items-start justify-start gap-[16px] max-w-full text-[#a6a6a6]">
               <div className="self-stretch rounded-[8px] bg-[#212121] border-[#282828] border-[1px] border-solid box-border flex flex-row items-center justify-center gap-[8px] min-h-[44px] whitespace-nowrap max-w-full">
-                <h2 className="m-[0px] flex-1 relative text-inherit leading-[20px] font-normal font-[inherit] inline-block max-w-[calc(100%_-_28px)]">
+                <h2 className="m-[0px] flex-1 pl-3 relative text-inherit leading-[20px] font-normal font-[inherit] inline-block max-w-[calc(100%_-_28px)]">
                   Enter Your email
                 </h2>
                 <img
-                  className="h-[20px] w-[20px] relative overflow-hidden shrink-0"
+                  className="h-[20px] pr-3 w-[20px] relative overflow-hidden shrink-0"
                   alt=""
                   src="/frame-8.svg"
                 />
