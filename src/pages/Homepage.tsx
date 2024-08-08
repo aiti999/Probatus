@@ -3,7 +3,7 @@ import HeroBackground from "../components/HeroBackground";
 import Services from "../components/Services";
 import WorkSection from "../components/WorkSection";
 import Process from "../components/Process";
-import FrameComponent from "../components/FrameComponent";
+import WhyChooseUs  from "../components/WhyChooseUs";
 import FrameComponent1 from "../components/FrameComponent1";
 import Form from "../components/Form";
 import Footer from "../components/Footer/Footer";
@@ -29,7 +29,7 @@ const Homepage: FunctionComponent = () => {
       <Services />
       <WorkSection />
       <Process />
-      <FrameComponent />
+      <WhyChooseUs/>
       <section className="self-stretch flex flex-row items-start justify-center pt-0 px-5 pb-[74px] box-border max-w-full text-center text-lg text-gray-600 font-franie">
         <div className="w-[580px] flex flex-col items-start justify-start gap-2 max-w-full">
           <div className="self-stretch relative leading-7 ">
