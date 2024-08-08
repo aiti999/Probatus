@@ -11,12 +11,12 @@ const Form: FunctionComponent<FormType> = ({ className = "" }) => {
     >
       <div className="self-stretch flex flex-row items-start justify-between max-w-full gap-[20px] lg:flex-wrap lg:justify-center">
         <div className="w-[464px] flex flex-col items-start justify-start gap-[8px] min-w-[464px] max-w-full lg:flex-1 mq825:min-w-full">
-        <h1
-      style={{ fontSize: '56px', lineHeight: '72px' }}
-      className="m-[0px] self-stretch relative text-inherit tracking-[-0.02em] font-normal font-[inherit] inline-block min-h-[168px] mq825:text-[32px] mq825:leading-[45px] mq450:text-[24px] mq450:leading-[34px]"
-    >
-      Please fill out the form to get in touch with us.
-    </h1>
+          <h1
+            style={{ fontSize: "56px", lineHeight: "72px" }}
+            className="m-[0px] self-stretch relative text-inherit tracking-[-0.02em] font-normal font-[inherit] inline-block min-h-[168px] mq825:text-[32px] mq825:leading-[45px] mq450:text-[24px] mq450:leading-[34px]"
+          >
+            Please fill out the form to get in touch with us.
+          </h1>
           <div className="w-[406px] relative text-[16px] leading-[24px] font-[Inter] text-[#605f5f] flex items-center max-w-full">
             Have a question or need assistance? Fill out the form below, and
             we'll get back to you promptly. Your inquiries are important to us,
@@ -32,16 +32,19 @@ const Form: FunctionComponent<FormType> = ({ className = "" }) => {
                 type="text"
               />
             </div>
-            <div className="self-stretch rounded-[4px] bg-[#f8f8f8] border-[#e6e6e6] border-[1px] border-solid box-border flex flex-row items-center justify-start py-[0px] pl-[0px] pr-[14px] gap-[8px] min-h-[40px] max-w-full">
-              <h2 className="m-[0px] flex-1 pl-2 relative text-inherit leading-[20px] font-medium font-[inherit] inline-block max-w-[calc(100%_-_28px)]">
-                Email address
-              </h2>
+            <div className="self-stretch rounded-[4px] bg-[#f8f8f8] border-[#e6e6e6] border-[1px] border-solid box-border flex flex-row items-center justify-start py-[0px] pl-[0px] pr-[14px] gap-[8px] min-h-[40px] max-w-full cursor-pointer">
+              <input
+                type="text"
+                className="m-[0px] flex-1 pl-2 relative text-inherit leading-[20px] font-medium font-[inherit] inline-block bg-transparent border-none focus:outline-none"
+                placeholder="Email address"
+              />
               <img
                 className="h-[20px] w-[20px] relative overflow-hidden shrink-0"
                 alt=""
                 src="/frame-7.svg"
               />
             </div>
+
             <div className="self-stretch rounded-[4px] bg-[#f8f8f8] border-[#e6e6e6] border-[1px] border-solid box-border flex flex-row items-center justify-start py-[8px] px-[7px] max-w-full">
               <input
                 className="w-full [border:none] [outline:none] font-medium font-[Inter] text-[14px] bg-[transparent] h-[20px] flex-1 relative leading-[20px] text-[#605f5f] text-left inline-block min-w-[250px] max-w-full p-[0px]"
@@ -60,11 +63,11 @@ const Form: FunctionComponent<FormType> = ({ className = "" }) => {
                 src="/frame2.svg"
               />
             </div>
-            <input type="text"
+            <input
+              type="text"
               className="border-[#e6e6e6] border-[1px] pb-20 border-solid bg-[#f8f8f8] h-[130px] w-auto [outline:none] self-stretch rounded-[4px] box-border flex flex-row items-start justify-start py-[10px] px-[8px] font-[Inter] font-medium text-[14px] text-[#605f5f]"
               placeholder="Message"
-              />
-          
+            />
           </div>
           <button className="cursor-pointer border-[#1b1b1b] border-[1px] border-solid py-[10px] px-[20px] bg-[#212121] self-stretch shadow-[0px_0px_0px_4px_rgba(33,_33,_33,_0.12),_0px_-2px_0px_#151515_inset,_0px_2px_0px_#343434_inset] rounded-[12px] overflow-hidden flex flex-row items-end justify-center hover:bg-[#545454] hover:border-[#4d4d4d] hover:border-[1px] hover:border-solid hover:box-border">
             <div className="relative text-[16px] tracking-[-0.01em] leading-[24px] font-medium font-[Inter] text-[#fff] text-left">

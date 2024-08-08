@@ -44,19 +44,19 @@ const Footer: FunctionComponent<FooterType> = ({ className = "" }) => {
               </div>
               <div className="flex flex-row items-start justify-start pt-[0px] px-[0px] pb-[3px] gap-[18px]">
                 <a href="https://www.linkedin.com" target="blank">
-                <img
-                  className="h-[24px] w-[24px] relative overflow-hidden shrink-0 min-h-[24px]"
-                  loading="lazy"
-                  alt=""
-                  src="/linkedinboxline.svg"
-                />
+                  <img
+                    className="h-[24px] w-[24px] relative overflow-hidden shrink-0 min-h-[24px]"
+                    loading="lazy"
+                    alt=""
+                    src="/linkedinboxline.svg"
+                  />
                 </a>
                 <a href="https://www.instagram.com" target="blank">
-                <img
-                  className="h-[24px] w-[24px] relative overflow-hidden shrink-0 min-h-[24px]"
-                  alt=""
-                  src="/instagramline.svg"
-                />
+                  <img
+                    className="h-[24px] w-[24px] relative overflow-hidden shrink-0 min-h-[24px]"
+                    alt=""
+                    src="/instagramline.svg"
+                  />
                 </a>
                 <a href="https://www.facebook.com" target="_blank">
                   <img
@@ -66,11 +66,11 @@ const Footer: FunctionComponent<FooterType> = ({ className = "" }) => {
                   />
                 </a>
                 <a href="https://twitter.com" target="blank">
-                <img
-                  className="h-[24px] w-[24px] relative overflow-hidden shrink-0 min-h-[24px]"
-                  alt=""
-                  src="/twitterxline.svg"
-                />
+                  <img
+                    className="h-[24px] w-[24px] relative overflow-hidden shrink-0 min-h-[24px]"
+                    alt=""
+                    src="/twitterxline.svg"
+                  />
                 </a>
               </div>
             </div>
@@ -84,16 +84,19 @@ const Footer: FunctionComponent<FooterType> = ({ className = "" }) => {
               newsletter.
             </div>
             <div className="self-stretch flex flex-col items-start justify-start gap-[16px] max-w-full text-[#a6a6a6]">
-              <div className="self-stretch rounded-[8px] bg-[#212121] border-[#282828] border-[1px] border-solid box-border flex flex-row items-center justify-center gap-[8px] min-h-[44px] whitespace-nowrap max-w-full">
-                <h2 className="m-[0px] flex-1 pl-3 relative text-inherit leading-[20px] font-normal font-[inherit] inline-block max-w-[calc(100%_-_28px)]">
-                  Enter Your email
-                </h2>
+              <div className="self-stretch rounded-[8px] bg-[#212121] border-[#282828] border-[1px] border-solid box-border flex flex-row items-center justify-center gap-[8px] min-h-[44px] whitespace-nowrap max-w-full cursor-pointer">
+                <input
+                  type="text"
+                  className="m-[0px] flex-1 pl-3 relative text-inherit leading-[20px] font-normal font-[inherit] inline-block bg-transparent border-none focus:outline-none"
+                  placeholder="Enter Your email"
+                />
                 <img
                   className="h-[20px] pr-3 w-[20px] relative overflow-hidden shrink-0"
                   alt=""
                   src="/frame-8.svg"
                 />
               </div>
+
               <button className="cursor-pointer border-[#0e5a17] border-[1px] border-solid py-[10px] px-[20px] bg-[#39d24c] self-stretch shadow-[0px_8px_8px_#5ee16e_inset,_0px_3px_0px_#0a4516,_0px_3px_3.8px_#11f12d_inset,_0px_4px_4px_#04c41c_inset,_3px_3px_2.2px_rgba(38,_38,_38,_0.25)_inset] rounded-[12px] overflow-hidden flex flex-row items-center justify-center whitespace-nowrap hover:bg-[#1fba33] hover:border-[#36803d] hover:border-[1px] hover:border-solid hover:box-border">
                 <div className="relative text-[16px] leading-[20px] font-medium font-[Inter] text-[#021c05] text-left">
                   Explore Our Services

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { FunctionComponent } from "react";
 
 export type ProcessType = {
@@ -5,15 +6,21 @@ export type ProcessType = {
 };
 
 const Process: FunctionComponent<ProcessType> = ({ className = "" }) => {
+  const [activeSection, setActiveSection] = useState<number | null>(null);
+
+  const toggleSection = (index: number) => {
+    setActiveSection(activeSection === index ? null : index);
+  };
+
   return (
     <section
       className={`self-stretch bg-[#fff] overflow-hidden flex flex-col items-start justify-start py-[108px] px-[80px] box-border max-w-full text-left text-[56px] text-[#212121] font-[Franie] mq825:py-[70px] mq825:px-[40px] mq825:box-border ${className}`}
     >
       <div className="self-stretch flex flex-row items-start justify-between max-w-full gap-[20px] mq1400:flex-wrap">
         <div className="w-[547px] flex flex-col items-start justify-start gap-[16px] min-w-[547px] max-w-full mq825:min-w-full mq1400:flex-1">
-        <h1 className="m-[0px] self-stretch relative text-inherit tracking-[-0.02em] leading-[72px] font-normal font-[inherit] text-[56px] mq450:text-[56px] mq450:leading-[43px]">
-      Our Approach to <br /> Project Delivery.
-    </h1>
+          <h1 className="m-[0px] self-stretch relative text-inherit tracking-[-0.02em] leading-[72px] font-normal font-[inherit] text-[56px] mq450:text-[56px] mq450:leading-[43px]">
+            Our Approach to <br /> Project Delivery.
+          </h1>
           <div className="w-[411px] relative text-[14px] tracking-[-0.02em] leading-[20px] font-[Inter] text-[#605f5f] inline-block max-w-full">
             At Probatus, we have a structured and collaborative approach to
             project delivery that ensures successful outcomes for our clients.
@@ -23,70 +30,59 @@ const Process: FunctionComponent<ProcessType> = ({ className = "" }) => {
           </div>
         </div>
         <div className="w-[632px] flex flex-col items-start justify-start min-w-[632px] max-w-full text-[24px] text-[#1a1a1a] lg:min-w-full mq1400:flex-1">
-          <div className="self-stretch flex flex-col items-start justify-start gap-[8px] max-w-full">
-            <div className="self-stretch flex flex-row items-center justify-center py-[24px] px-[8px] box-border max-w-full gap-[106px] ">
-              <div className="flex-1 flex flex-row items-center justify-between max-w-full gap-[20px]">
-                <h2 className="m-[0px] w-[328px] relative text-inherit leading-[24px] capitalize font-normal font-[inherit] flex items-center max-w-[calc(100%_-_44px)] mq450:text-[19px] mq450:leading-[19px]">
-                  Discovery and Planning
+          {[
+            {
+              title: "Discovery and Planning",
+              content:
+                "We begin by conducting a thorough discovery phase, collaborating closely with our clients to understand their vision, goals, and requirements. We analyze business objectives, define project scope, and create a detailed project plan outlining timelines, milestones, and deliverables.",
+            },
+            {
+              title: "Development and Implementation",
+              content:
+                "During this phase, we focus on translating the project plan into actionable tasks. Our development team works on creating the necessary software, features, and integrations according to the project specifications.",
+            },
+            {
+              title: "Quality Assurance and Testing",
+              content:
+                "We conduct comprehensive testing to ensure that the project meets quality standards and functions as intended. This phase includes unit testing, integration testing, and user acceptance testing.",
+            },
+            {
+              title: "Deployment and Launch",
+              content:
+                "After thorough testing, we proceed with the deployment of the project. We handle the configuration, migration, and launch processes to ensure a smooth go-live experience.",
+            },
+            {
+              title: "Post-Launch Support and Maintenance",
+              content:
+                "Post-launch, we provide ongoing support and maintenance to address any issues that arise, ensure optimal performance, and implement necessary updates.",
+            },
+          ].map((section, index) => (
+            <div
+              key={index}
+              className="self-stretch border-[rgba(0,43,49,0.16)] border-b-[1px] border-solid box-border flex flex-col"
+            >
+              <div
+                className="flex flex-row items-center justify-between py-[24px] px-[8px] cursor-pointer"
+                onClick={() => toggleSection(index)}
+              >
+                <h2 className="m-[0px] relative text-inherit leading-[24px] capitalize font-normal font-[inherit] flex items-center max-w-[calc(100%_-_44px)] mq450:text-[19px] mq450:leading-[19px]">
+                  {section.title}
                 </h2>
                 <img
-                  className="h-[24px] w-[24px] relative overflow-hidden shrink-0"
-                  loading="lazy"
+                  className={`h-[24px] w-[24px] relative overflow-hidden shrink-0 transform transition-transform duration-300 ${
+                    activeSection === index ? "rotate-180" : ""
+                  }`}
                   alt=""
-                  src="/frame1.svg"
+                  src="/frame-1.svg"
                 />
               </div>
+              {activeSection === index && (
+                <div className="px-[8px] pb-[22px] text-[16px] text-[#605f5f] font-[Inter]">
+                  <div className="leading-[24px]">{section.content}</div>
+                </div>
+              )}
             </div>
-            <div className="self-stretch border-[rgba(0,43,49,0.16)] border-b-[1px] border-solid flex flex-col items-start justify-start pt-[0px] px-[8px] pb-[22px] text-[16px] text-[#605f5f] font-[Inter]">
-              <div className="self-stretch relative leading-[24px]">
-                We begin by conducting a thorough discovery phase, collaborating
-                closely with our clients to understand their vision, goals, and
-                requirements. We analyze business objectives, define project
-                scope, and create a detailed project plan outlining timelines,
-                milestones, and deliverables.
-              </div>
-            </div>
-          </div>
-          <div className="self-stretch border-[rgba(0,43,49,0.16)] border-b-[1px] border-solid box-border flex flex-row items-center justify-between min-h-[72px] max-w-full gap-[20px]">
-            <h2 className="m-[0px] w-[475px] relative text-inherit leading-[24px] capitalize font-normal font-[inherit] flex items-center max-w-[calc(100%_-_44px)] mq450:text-[19px] mq450:leading-[19px]">
-              Development and Implementation
-            </h2>
-            <img
-              className="h-[24px] w-[24px] relative overflow-hidden shrink-0"
-              alt=""
-              src="/frame-1.svg"
-            />
-          </div>
-          <div className="self-stretch border-[rgba(0,43,49,0.16)] border-b-[1px] border-solid box-border flex flex-row items-center justify-between min-h-[72px] max-w-full gap-[20px]">
-            <h2 className="m-[0px] w-[420px] relative text-inherit leading-[24px] capitalize font-normal font-[inherit] flex items-center max-w-[calc(100%_-_44px)] mq450:text-[19px] mq450:leading-[19px]">
-              Quality Assurance and Testing
-            </h2>
-            <img
-              className="h-[24px] w-[24px] relative overflow-hidden shrink-0"
-              alt=""
-              src="/frame-1.svg"
-            />
-          </div>
-          <div className="self-stretch border-[rgba(0,43,49,0.16)] border-b-[1px] border-solid box-border flex flex-row items-center justify-between min-h-[72px] max-w-full gap-[20px]">
-            <h2 className="m-[0px] w-[343px] relative text-inherit leading-[24px] capitalize font-normal font-[inherit] flex items-center max-w-[calc(100%_-_44px)] mq450:text-[19px] mq450:leading-[19px]">
-              Deployment and Launch
-            </h2>
-            <img
-              className="h-[24px] w-[24px] relative overflow-hidden shrink-0"
-              alt=""
-              src="/frame-1.svg"
-            />
-          </div>
-          <div className="self-stretch border-[rgba(0,43,49,0.16)] border-b-[1px] border-solid box-border flex flex-row items-center justify-between min-h-[72px] max-w-full gap-[20px]">
-            <h2 className="m-[0px] w-[545px] relative text-inherit leading-[24px] capitalize font-normal font-[inherit] flex items-center max-w-[calc(100%_-_44px)] mq450:text-[19px] mq450:leading-[19px]">
-              Post-Launch Support and Maintenance
-            </h2>
-            <img
-              className="h-[24px] w-[24px] relative overflow-hidden shrink-0"
-              alt=""
-              src="/frame-1.svg"
-            />
-          </div>
+          ))}
         </div>
       </div>
     </section>
