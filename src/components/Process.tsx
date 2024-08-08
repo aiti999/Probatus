@@ -29,7 +29,7 @@ const Process: FunctionComponent<ProcessType> = ({ className = "" }) => {
             lifecycle.
           </div>
         </div>
-        <div className="w-[632px] flex flex-col items-start justify-start min-w-[632px] max-w-full text-[24px] text-[#1a1a1a] lg:min-w-full mq1400:flex-1">
+        <div className="w-[612px] flex flex-col items-start justify-start min-w-[632px] max-w-full text-[24px] text-[#1a1a1a] lg:min-w-full mq1400:flex-1">
           {[
             {
               title: "Discovery and Planning",
@@ -65,16 +65,16 @@ const Process: FunctionComponent<ProcessType> = ({ className = "" }) => {
                 className="flex flex-row items-center justify-between py-[24px] px-[8px] cursor-pointer"
                 onClick={() => toggleSection(index)}
               >
-                <h2 className="m-[0px] relative text-inherit leading-[24px] capitalize font-normal font-[inherit] flex items-center max-w-[calc(100%_-_44px)] mq450:text-[19px] mq450:leading-[19px]">
+                <h2 className="m-[0px] relative text-inherit leading-[24px] capitalize  font-medium flex items-center max-w-[calc(100%_-_44px)] mq450:text-[19px] mq450:leading-[19px]">
                   {section.title}
                 </h2>
-                <img
-                  className={`h-[24px] w-[24px] relative overflow-hidden shrink-0 transform transition-transform duration-300 ${
-                    activeSection === index ? "rotate-180" : ""
-                  }`}
-                  alt=""
-                  src="/frame-1.svg"
-                />
+                <div className="h-[24px] w-[24px] flex items-center justify-center relative overflow-hidden shrink-0">
+                  {activeSection === index ? (
+                    <span className="text-[24px]">-</span>
+                  ) : (
+                    <span className="text-[24px]">+</span>
+                  )}
+                </div>
               </div>
               {activeSection === index && (
                 <div className="px-[8px] pb-[22px] text-[16px] text-[#605f5f] font-[Inter]">
