@@ -1,14 +1,14 @@
 import React, { FunctionComponent } from "react";
 import HeroBackground from "../components/HeroBackground";
-import About from "../components/About";
 import Services from "../components/Services";
 import WorkSection from "../components/WorkSection";
 import Process from "../components/Process";
 import FrameComponent from "../components/FrameComponent";
 import FrameComponent1 from "../components/FrameComponent1";
 import Form from "../components/Form";
-import Footer from "../components/Footer";
+import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
+import AboutUs from "../components/AboutUs";
 
 const testimonialData = {
   title: "Testimonial",
@@ -25,7 +25,7 @@ const Homepage: FunctionComponent = () => {
        
         <HeroBackground />
       </section>
-      <About />
+      <AboutUs/>
       <Services />
       <WorkSection />
       <Process />

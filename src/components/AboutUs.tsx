@@ -4,7 +4,7 @@ export type AboutUsType = {
   className?: string;
 };
 
-// Define button data
+// Define button data here
 const buttonData = [
   { label: "Introduction", content: "At Probatus, we believe in the power of expertise and dedication. Our journey began with a vision to provide proven, tried, and tested solutions that empower businesses to achieve success. With a team of seasoned professionals and a commitment to quality, we've earned a reputation for delivering results that exceed expectations." },
   { label: "Mission", content: "Our mission is to drive innovation and deliver solutions that create long-term value for our clients. We strive to be a trusted partner, providing exceptional service and leveraging our expertise to help businesses thrive in a competitive landscape." },
@@ -20,6 +20,9 @@ const AboutUs: FunctionComponent<AboutUsType> = ({ className = "" }) => {
   };
 
   return (
+    <section
+      className={`self-stretch overflow-hidden flex flex-col items-start justify-start p-[80px] box-border max-w-full z-[2] text-left text-[40px] text-[#212121] font-[Franie] mq825:pl-[40px] mq825:pr-[40px] mq825:box-border mq450:pt-[52px] mq450:pb-[52px] mq450:box-border ${className}`}
+    >
     <div
       className={`self-stretch flex flex-row items-start justify-between max-w-full gap-[20px] text-left text-[40px] text-[#212121] font-[Franie] mq1400:flex-wrap ${className}`}
     >
@@ -79,6 +82,7 @@ const AboutUs: FunctionComponent<AboutUsType> = ({ className = "" }) => {
         </div>
       </div>
     </div>
+    </section>
   );
 };
 
