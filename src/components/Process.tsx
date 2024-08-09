@@ -70,9 +70,9 @@ const Process: FunctionComponent<ProcessType> = ({ className = "" }) => {
                 </h2>
                 <div className="h-[24px] w-[24px] flex items-center justify-center relative overflow-hidden shrink-0">
                   {activeSection === index ? (
-                    <span className="text-[24px]">-</span>
+                    <span className="text-[28px] font-bold ">-</span>
                   ) : (
-                    <span className="text-[24px]">+</span>
+                    <span className="text-[24px] font-bold">+</span>
                   )}
                 </div>
               </div>

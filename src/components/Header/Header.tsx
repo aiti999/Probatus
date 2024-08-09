@@ -15,7 +15,7 @@ const navigationItems = [
 const Header: FunctionComponent<ComponentType> = ({ className = '' }) => {
   return (
     <header
-      className={`fixed bg-black top-0 left-0 right-0 self-stretch opacity-85 overflow-hidden flex flex-row items-start justify-start py-4 px-20 bg-[url('/public/component-1@3x.png')] bg-cover bg-no-repeat bg-top z-50 max-w-full mq825:pl-10 mq825:pr-10 ${className}`}
+      className={`fixed bg-black top-0 left-0 right-0 self-stretch opacity-98 overflow-hidden flex flex-row items-start justify-start py-4 px-20 bg-[url('/public/component-1@3x.png')] bg-cover bg-no-repeat bg-top z-50 max-w-full mq825:pl-10 mq825:pr-10 ${className}`}
     >
       <div className="flex-1 flex flex-row items-start justify-between max-w-full gap-5">
         <img

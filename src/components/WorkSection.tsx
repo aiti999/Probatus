@@ -37,8 +37,10 @@ const WorkSection: FunctionComponent<WorkSectionType> = ({ className = "" }) => 
           <h1 className="m-[0px] self-stretch relative text-inherit tracking-[-0.02em] leading-[72px] font-normal font-[inherit] mq825:text-[45px] mq825:leading-[58px] mq450:text-[34px] mq450:leading-[43px]">
             Our Recent Work
           </h1>
-          <div className="relative text-[14px] tracking-[-0.02em] leading-[20px] font-[Inter] text-[#605f5f] max-w-full">
-            At Probatus, we have a structured and collaborative approach to project delivery that ensures successful outcomes for our clients. Our methodology is built on industry best practices, meticulous planning, and a commitment to quality at every stage of the project lifecycle.
+          <div className="relative text-[14px] tracking-[-0.02em] leading-[20px] font-[Inter] text-[#605f5f] max-w-full text-center mx-auto">
+            <p className="max-w-[600px] mx-auto leading-[28px] font-[Inter] text-[16px]">
+              At Probatus, we have a structured and collaborative approach to project delivery that ensures successful outcomes for our clients. Our methodology is built on industry best practices, meticulous planning, and a commitment to quality at every stage of the project lifecycle.
+            </p>
           </div>
         </div>
         <div className="flex flex-wrap justify-between gap-[32px] w-full">
@@ -50,7 +52,7 @@ const WorkSection: FunctionComponent<WorkSectionType> = ({ className = "" }) => 
                 alt={item.title}
                 src={item.imageUrl}
               />
-              <div className="flex flex-col items-start justify-start gap-[4px]">
+              <div className="flex flex-col items-start justify-start gap-[4px] text-left">
                 <h3 className="m-[0px] text-[24px] leading-[24px] font-normal">
                   {item.title}
                 </h3>

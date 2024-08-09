@@ -1,45 +1,30 @@
 import { FunctionComponent } from "react";
 
-export type InputFieldType = {
+type InputProps = {
+  placeholder: string;
+  type?: string;
   className?: string;
+  iconSrc?: string;
 };
 
-const InputField: FunctionComponent<InputFieldType> = ({ className = "InputField" }) => {
-  return (
-    <div
-      className={`self-stretch rounded-xl bg-white flex flex-row items-start justify-start max-w-full text-left text-xs text-black-60 font-body ${className}`}
-    >
-      <div className="h-[46px] flex-1 rounded-xl flex flex-row items-start justify-start pt-0 px-0 pb-0 box-border max-w-full">
-        <div className="h-[54px] w-[518px] relative rounded border-black-20 border-[3px] border-solid box-border hidden max-w-full" />
-        <div className="h-3.5 hidden flex-row items-start justify-start py-0 pl-0 pr-4 box-border gap-[3px]">
-          <img
-            className="h-[13px] w-[13px] relative overflow-hidden shrink-0 hidden"
-            alt=""
-            src="/exclamation.svg"
-          />
-          <div className="self-stretch relative leading-[120%]">Message</div>
-        </div>
-        <div className="h-12 flex-1 relative rounded-xl border-black-20 border-[1px] border-solid box-border overflow-hidden max-w-full">
-          <div className="absolute top-[15px] left-[16px] h-[18px] flex flex-col items-start justify-start pt-0.5 px-0 pb-0 box-border">
+const Input: FunctionComponent<InputProps> = ({
+  placeholder,
+  type = "text",
+  className = "",
+  iconSrc,
+}) => (
+  <div
+    className={`self-stretch rounded-[4px] bg-[#f8f8f8] border-[#e6e6e6] border-[1px] border-solid box-border flex flex-row items-center justify-start py-[8px] px-[7px] max-w-full ${className}`}
+  >
+    <input
+      type={type}
+      className="w-full [border:none] [outline:none] font-medium font-[Inter] text-[14px] bg-[transparent] h-[20px] flex-1 relative leading-[20px] text-[#605f5f] text-left inline-block"
+      placeholder={placeholder}
+    />
+    {iconSrc && (
+      <img className="h-[20px] w-[20px] relative overflow-hidden shrink-0" alt="" src={iconSrc} />
+    )}
+  </div>
+);
 
-          </div>
-          <div className="absolute left-[16px] rounded-12xs bg-black w-px h-[22px] hidden" />
-          <input
-            className="w-[500px] pr-10 py-4 pl-4 [border:none] [outline:none] font-body text-base bg-[transparent] h-[22px] relative leading-[140%] text-black-60 text-left inline-block p-0"
-            placeholder="Select Your Service"
-            type="text"
-          />
-          <div className="absolute top-[13px] left-[122px] rounded-12xs bg-black w-px h-[22px] hidden" />
-          <div className="absolute top-[13px] left-[164px] rounded-12xs w-[314px] h-[22px]" />
-          <img
-            className="absolute cursor-pointer top-[15px] left-[478px] w-[18px] h-[18px]"
-            alt=""
-            src="/arrow-down.svg"
-          />
-        </div>
-      </div>
-    </div>
-  );
-};
-
-export default InputField;
+export default Input;
