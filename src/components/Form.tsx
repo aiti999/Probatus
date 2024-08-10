@@ -25,13 +25,13 @@ const Form: FunctionComponent<FormType> = ({ className = "" }) => {
             and we look forward to hearing from you.
           </div>
         </div>
-        <div className="w-[503px] flex flex-col items-end justify-start gap-[32px] min-w-[503px] max-w-full text-[14px] text-[#605f5f] font-[Inter] lg:flex-1 gap-[16px] mq825:min-w-full">
+        <div className="w-[503px] flex flex-col items-end justify-start gap-[32px] min-w-[503px] max-w-full text-[14px] text-[#605f5f] font-[Inter] lg:flex-1 mq825:min-w-full">
           <Input placeholder="Name" />
           <Input placeholder="Email address" iconSrc="/frame-7.svg" />
           <Input placeholder="Phone number" />
           <Input placeholder="Select Your Service" iconSrc="/frame2.svg" />
           <textarea
-            className="border-[#e6e6e6] border-[1px] pb-20 border-solid bg-[#f8f8f8] h-[130px] w-auto [outline:none] self-stretch rounded-[4px] box-border flex flex-row items-start justify-start py-[10px] px-[8px] font-[Inter] font-medium text-[14px] text-[#605f5f]"
+            className="border-[#e6e6e6] border-[1px] pb-20 border-solid resize-none bg-[#f8f8f8] h-[130px] w-auto [outline:none] self-stretch rounded-[4px] box-border flex flex-row items-start justify-start py-[10px] px-[8px] font-[Inter] font-medium text-[14px] text-[#605f5f]"
             placeholder="Message"
           />
           <Button>Get Free Quotation</Button>

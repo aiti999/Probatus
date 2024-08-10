@@ -15,10 +15,6 @@ const buttonData = [
 const AboutUs: FunctionComponent<AboutUsType> = ({ className = "" }) => {
   const [selectedIndex, setSelectedIndex] = useState(0);
 
-  const handleButtonClick = (index: number) => {
-    setSelectedIndex(index);
-  };
-
   return (
     <section
       className={`self-stretch overflow-hidden flex flex-col items-start justify-start p-[80px] box-border max-w-full z-[2] text-left text-[40px] text-[#212121] font-[Franie] mq825:pl-[40px] mq825:pr-[40px] mq825:box-border mq450:pt-[52px] mq450:pb-[52px] mq450:box-border ${className}`}
@@ -32,32 +28,21 @@ const AboutUs: FunctionComponent<AboutUsType> = ({ className = "" }) => {
             <span className="text-[#96fc04]">.</span>
           </h1>
           <div className="flex flex-col items-start justify-start gap-[8px]">
-            <div className="flex flex-row items-start justify-start gap-[8px]">
-              {buttonData.slice(0, 2).map((button, index) => (
-                <button
-                  key={button.label}
-                  className={`cursor-pointer border-[1px] border-solid py-[10px] px-[22px] bg-[transparent] rounded-[32px] flex flex-row items-center justify-center hover:bg-[rgba(84,84,84,0.09)] ${selectedIndex === index ? 'border-[#212121]' : 'border-[rgba(33,33,33,0.5)]'}`}
-                  onClick={() => handleButtonClick(index)}
-                >
-                  <div className={`relative text-[16px] tracking-[-0.01em] leading-[24px] font-[Inter] ${selectedIndex === index ? 'text-[#212121]' : 'text-[rgba(33,33,33,0.5)]'} text-left inline-block min-w-[90px]`}>
-                    {button.label}
-                  </div>
-                </button>
-              ))}
-            </div>
-            <div className="flex flex-row items-start justify-start gap-[8px] mq450:flex-wrap">
-              {buttonData.slice(2).map((button, index) => (
-                <button
-                  key={button.label}
-                  className={`cursor-pointer border-[1px] border-solid py-[10px] px-[30px] bg-[transparent] rounded-[32px] flex flex-row items-center justify-center whitespace-nowrap hover:bg-[rgba(84,84,84,0.09)] ${selectedIndex === index + 2 ? 'border-[#212121]' : 'border-[rgba(33,33,33,0.5)]'}`}
-                  onClick={() => handleButtonClick(index + 2)}
-                >
-                  <div className={`relative text-[16px] tracking-[-0.01em] leading-[24px] font-[Inter] ${selectedIndex === index + 2 ? 'text-[#212121]' : 'text-[rgba(33,33,33,0.5)]'} text-left inline-block min-w-[90px]`}>
-                    {button.label}
-                  </div>
-                </button>
-              ))}
-            </div>
+            {[0, 1].map((i) => (
+              <div className="flex flex-row items-start justify-start gap-[8px]" key={i}>
+                {buttonData.slice(i * 2, i * 2 + 2).map((button, index) => (
+                  <button
+                    key={button.label}
+                    className={`cursor-pointer border-[1px] border-solid py-[10px] px-[22px] bg-[transparent] rounded-[32px] flex flex-row items-center justify-center hover:bg-[rgba(84,84,84,0.09)] ${selectedIndex === i * 2 + index ? 'border-[#212121]' : 'border-[rgba(33,33,33,0.5)]'}`}
+                    onClick={() => setSelectedIndex(i * 2 + index)}
+                  >
+                    <div className={`relative text-[16px] tracking-[-0.01em] leading-[24px] font-[Inter] ${selectedIndex === i * 2 + index ? 'text-[#212121]' : 'text-[rgba(33,33,33,0.5)]'} text-left inline-block min-w-[90px]`}>
+                      {button.label}
+                    </div>
+                  </button>
+                ))}
+              </div>
+            ))}
           </div>
         </div>
         <div className="w-[730px] flex flex-col items-start justify-start py-[0px] px-[0px] box-border gap-[24px] min-w-[730px] max-w-full lg:min-w-full mq1400:flex-1">
