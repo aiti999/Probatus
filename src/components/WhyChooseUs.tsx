@@ -4,9 +4,7 @@ export type WhyChooseUs = {
   className?: string;
 };
 
-const WhyChooseUs: FunctionComponent<WhyChooseUs> = ({
-  className = "",
-}) => {
+const WhyChooseUs: FunctionComponent<WhyChooseUs> = ({ className = "" }) => {
   return (
     <section
       className={`self-stretch flex flex-row items-start justify-start pt-[0px] px-[0px] pb-[80px] box-border max-w-full text-left text-[40px] text-[#212121] font-[Franie] lg:pb-[52px] lg:box-border mq450:pb-[34px] mq450:box-border ${className}`}
@@ -14,11 +12,12 @@ const WhyChooseUs: FunctionComponent<WhyChooseUs> = ({
       <div className="flex-1 bg-[#f9f9f9] overflow-hidden flex flex-col items-start justify-start p-[80px] box-border max-w-full mq825:py-[52px] mq825:px-[40px] mq825:box-border mq450:pt-[34px] mq450:pb-[34px] mq450:box-border">
         <div className="self-stretch flex flex-row flex-wrap items-start justify-start gap-[32px] max-w-full ">
           <img
-            className="h-[605px] flex-1 relative rounded-[16px] max-w-full overflow-hidden object-cover min-w-[406px] min-h-[605px] mq825:min-w-full"
+            className="h-auto flex-1 relative rounded-[16px] max-w-full overflow-hidden object-cover w-full min-w-[406px] mq825:min-w-full mq825:h-[auto]"
             loading="lazy"
             alt=""
             src="/why-choose-us@2x.png"
           />
+
           <div className="flex-1 flex flex-col items-start justify-start gap-[24px] min-w-[406px] max-w-full mq825:min-w-full">
             <div className="self-stretch flex flex-col items-start justify-start gap-[16px]">
               <h1 className="m-[0px] self-stretch relative text-inherit tracking-[-0.02em] leading-[56px] font-normal font-[inherit] mq825:text-[32px] mq825:leading-[45px] mq450:text-[24px] mq450:leading-[34px]">

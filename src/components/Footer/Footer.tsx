@@ -39,7 +39,7 @@ export type SocialLinksType = {
 
 const SocialLinks: FunctionComponent<SocialLinksType> = ({ links }) => (
   <FooterSection title="Connect With Us">
-    <div className="flex flex-row items-start justify-start pt-[0px] px-[0px] pb-[3px] gap-[18px]">
+    <div className="flex flex-row items-start justify-start pt-[1px] px-[0px] pb-[3px] gap-[18px]">
       {links.map(({ href, src, alt }, index) => (
         <a key={index} href={href} target="blank">
           <img

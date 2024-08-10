@@ -4,14 +4,14 @@ import Services from "../components/Services";
 import WorkSection from "../components/WorkSection";
 import Process from "../components/Process";
 import WhyChooseUs  from "../components/WhyChooseUs";
-import FrameComponent1 from "../components/FrameComponent1";
+import Testimonial from "../components/Testimonials";
 import Form from "../components/Form";
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 import AboutUs from "../components/AboutUs";
 
 const testimonialData = {
-  title: "Testimonial",
+  title: "Testimonials",
   heading: "Our clients say about us",
 };
 
@@ -41,7 +41,7 @@ const Homepage: FunctionComponent = () => {
 
         </div>
       </section>
-      <FrameComponent1 />
+      <Testimonial />
       <Form />
       <Footer />
     </div>

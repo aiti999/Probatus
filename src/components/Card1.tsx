@@ -13,11 +13,11 @@ export type Card1Type = {
 const Card1: FunctionComponent<Card1Type> = ({
   className = "",
   oval,
-  title = "Client D's mobile app project was in need of a revamp. Probatus revamped the app's UI/UX design, resulting in a 30% increase in user retention and a 20% boost in app ratings. Client D's app is now a user-favorite, driving higher engagement and satisfaction.",
-  description = "Client D's mobile app project was in need of a revamp. Probatus revamped the app's UI/UX design, resulting in a 30% increase in user retention and a 20% boost in app ratings. Client D's app is now a user-favorite, driving higher engagement and satisfaction.",
-  userName = "Leslie Alexander",
-  userTitle = "Freelance React Developer",
-  iconSrc = "/favourite31.svg",
+  title,
+  description,
+  userName,
+  userTitle,
+  iconSrc,
 }) => {
   return (
     <div
@@ -30,12 +30,15 @@ const Card1: FunctionComponent<Card1Type> = ({
           alt="Icon"
           src={iconSrc}
         />
+        <div className="self-stretch relative text-[24px] font-bold leading-[28px] text-[#18181b]">
+          {title}
+        </div>
         <div className="self-stretch relative leading-[28px]">
           {description}
         </div>
         <div className="w-[236px] h-[54px] flex flex-row items-center justify-start text-[#18181b] font-[Franie]">
           <img
-            className="h-[120px] w-[120px] rounded-full object-cover"
+            className="h-[140px] w-[140px] rounded-full object-cover mr-4"
             loading="lazy"
             alt="User"
             src={oval}
