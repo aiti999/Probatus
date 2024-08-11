@@ -54,7 +54,7 @@ const AboutUs: FunctionComponent<AboutUsType> = ({ className = "" }) => {
               {buttonData[selectedIndex].content}
             </div>
           </div>
-          <div className="w-[154px] h-[48px] shadow-[0px_0px_0px_4px_rgba(33,_33,_33,_0.12),_0px_-2px_0px_#151515_inset,_0px_2px_0px_#343434_inset] rounded-[12px] bg-[#212121] border-[#1b1b1b] border-[1px] border-solid box-border overflow-hidden shrink-0 flex flex-row items-end justify-center gap-[4px] text-[16px] text-[#fff] font-[Inter]">
+        <button>  <div className="w-[154px] h-[48px] shadow-[0px_0px_0px_4px_rgba(33,_33,_33,_0.12),_0px_-2px_0px_#151515_inset,_0px_2px_0px_#343434_inset] rounded-[12px] bg-[#212121] border-[#1b1b1b] border-[1px] border-solid box-border overflow-hidden shrink-0 flex flex-row items-end justify-center gap-[4px] text-[16px] text-[#fff] font-[Inter]">
             <h2 className="m-[0px] cursor-pointer relative pb-2 text-inherit tracking-[-0.01em] leading-[24px] font-medium font-[inherit] inline-block min-w-[66px]">
               Discover
             </h2>
@@ -65,6 +65,7 @@ const AboutUs: FunctionComponent<AboutUsType> = ({ className = "" }) => {
               src="/frame.svg"
             />
           </div>
+          </button>
         </div>
       </div>
     </section>

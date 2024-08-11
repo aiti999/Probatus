@@ -1,6 +1,6 @@
 import { FunctionComponent } from "react";
 
-export type Card1Type = {
+export type CardType = {
   className?: string;
   oval?: string;
   title?: string;
@@ -10,7 +10,7 @@ export type Card1Type = {
   iconSrc?: string;
 };
 
-const Card1: FunctionComponent<Card1Type> = ({
+const Card: FunctionComponent<CardType> = ({
   className = "",
   oval,
   title,
@@ -57,4 +57,4 @@ const Card1: FunctionComponent<Card1Type> = ({
   );
 };
 
-export default Card1;
+export default Card;
