@@ -22,7 +22,11 @@ const Navbar: FunctionComponent<ComponentType> = ({ className = '' }) => {
   };
 
   return (
+<<<<<<< HEAD
 <header className={`fixed top-0 left-0 right-0 py-4 md:px-20 px-4 z-50 bg-opacity-85 flex items-center justify-between ${className}`}>
+=======
+<header className={`fixed bg-[url('/public/component-1@3x.png')] top-0 left-0 right-0 py-4 md:px-20 px-4 z-50  bg-opacity-85 flex bg-cover bg-no-repeat bg-top items-center justify-between ${className}`}>
+>>>>>>> 01409dbe351071d164949c3d64927ad0b55e8953
 <img
         className="h-11 w-32 object-cover"
         loading="lazy"
