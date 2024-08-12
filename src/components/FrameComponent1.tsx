@@ -1,5 +1,5 @@
 import { FunctionComponent } from "react";
-import Card1 from "./Card1";
+import Card1 from "./Card";
 
 export type FrameComponent1Type = {
   className?: string;

@@ -1,6 +1,6 @@
 import { FunctionComponent } from "react";
 
-export type Card1Type = {
+export type CardType = {
   className?: string;
   oval?: string;
   title?: string;
@@ -10,20 +10,20 @@ export type Card1Type = {
   iconSrc?: string;
 };
 
-const Card1: FunctionComponent<Card1Type> = ({
+const Card: FunctionComponent<CardType> = ({
   className = "",
   oval,
-  title = "Client D's mobile app project was in need of a revamp. Probatus revamped the app's UI/UX design, resulting in a 30% increase in user retention and a 20% boost in app ratings. Client D's app is now a user-favorite, driving higher engagement and satisfaction.",
-  description = "Client D's mobile app project was in need of a revamp. Probatus revamped the app's UI/UX design, resulting in a 30% increase in user retention and a 20% boost in app ratings. Client D's app is now a user-favorite, driving higher engagement and satisfaction.",
-  userName = "Leslie Alexander",
-  userTitle = "Freelance React Developer",
-  iconSrc = "/favourite31.svg",
+  title,
+  description,
+  userName,
+  userTitle,
+  iconSrc,
 }) => {
   return (
     <div
       className={`w-[514px] bg-[#fff] border-[#f3efff] border-[1px] border-solid box-border shrink-0 flex flex-col items-start justify-start py-[50px] px-[31px] max-w-full text-left text-[16px] text-[#605f5f] font-[Inter] mq825:w-[calc(100%_-_40px)] ${className}`}
     >
-      <div className="self-stretch flex flex-col items-start justify-start gap-[32px]">
+      <div className="self-stretch flex flex-col items-start justify-start gap-[22px]">
         <img
           className="w-[96px] h-[16px] relative"
           loading="lazy"
@@ -35,7 +35,7 @@ const Card1: FunctionComponent<Card1Type> = ({
         </div>
         <div className="w-[236px] h-[54px] flex flex-row items-center justify-start text-[#18181b] font-[Franie]">
           <img
-            className="h-[120px] w-[120px] rounded-full object-cover"
+            className="h-[40px] w-[40px] rounded-full object-cover mr-4"
             loading="lazy"
             alt="User"
             src={oval}
@@ -44,7 +44,7 @@ const Card1: FunctionComponent<Card1Type> = ({
             <b className="self-stretch relative leading-[28px]">
               {userName}
             </b>
-            <div className="relative text-[14px] leading-[22px] font-[Inter] text-[#52525b]">
+            <div className=" flex-1 flex flex-col items-start justify-start text-[14px] leading-[22px] font-[Inter] text-[#52525b]">
               {userTitle}
             </div>
           </div>
@@ -54,4 +54,4 @@ const Card1: FunctionComponent<Card1Type> = ({
   );
 };
 
-export default Card1;
+export default Card;

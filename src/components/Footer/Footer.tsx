@@ -39,7 +39,7 @@ export type SocialLinksType = {
 
 const SocialLinks: FunctionComponent<SocialLinksType> = ({ links }) => (
   <FooterSection title="Connect With Us">
-    <div className="flex flex-row items-start justify-start pt-[0px] px-[0px] pb-[3px] gap-[18px]">
+    <div className="flex flex-row items-start justify-start pt-[1px] px-[0px] pb-[3px] gap-[18px]">
       {links.map(({ href, src, alt }, index) => (
         <a key={index} href={href} target="blank">
           <img
@@ -115,19 +115,17 @@ const Footer: FunctionComponent<FooterType> = ({ className = "" }) => {
             </div>
           </div>
 
-          <ContactInfo
-            email="hello@Probatus.in"
-            phone="+918266947784"
-          />
-
-          <SocialLinks
-            links={[
-              { href: "https://www.linkedin.com", src: "/linkedinboxline.svg", alt: "LinkedIn" },
-              { href: "https://www.instagram.com", src: "/instagramline.svg", alt: "Instagram" },
-              { href: "https://www.facebook.com", src: "/facebookcircleline.svg", alt: "Facebook" },
-              { href: "https://twitter.com", src: "/twitterxline.svg", alt: "Twitter" },
-            ]}
-          />
+          <div className="flex flex-col gap-[20px]">
+            <ContactInfo email="hello@Probatus.in" phone="+918266947784" />
+            <SocialLinks
+              links={[
+                { href: "https://www.linkedin.com", src: "/linkedinboxline.svg", alt: "LinkedIn" },
+                { href: "https://www.instagram.com", src: "/instagramline.svg", alt: "Instagram" },
+                { href: "https://www.facebook.com", src: "/facebookcircleline.svg", alt: "Facebook" },
+                { href: "https://twitter.com", src: "/twitterxline.svg", alt: "Twitter" },
+              ]}
+            />
+          </div>
 
           <Newsletter
             placeholder="Enter Your email"

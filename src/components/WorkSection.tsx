@@ -43,11 +43,11 @@ const WorkSection: FunctionComponent<WorkSectionType> = ({ className = "" }) => 
             </p>
           </div>
         </div>
-        <div className="flex flex-wrap justify-between gap-[32px] w-full">
+        <div className="flex flex-wrap justify-between gap-[32px] w-full mq450:flex-col">
           {workItems.map((item, index) => (
-            <div key={index} className="w-[calc(50%-16px)] flex flex-col items-start justify-start gap-[16px]">
+            <div key={index} className="w-[calc(50%-16px)] flex flex-col items-start justify-start gap-[16px] mq450:w-full">
               <img
-                className="w-full h-[485px] rounded-[8px] object-cover"
+                className="w-full h-[485px] rounded-[8px] object-cover mq450:h-auto"
                 loading="lazy"
                 alt={item.title}
                 src={item.imageUrl}
