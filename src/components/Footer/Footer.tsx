@@ -134,10 +134,10 @@ const Footer: FunctionComponent<FooterType> = ({ className = "" }) => {
         </div>
       </div>
       <div className="self-stretch bg-[#060606] overflow-hidden flex flex-row items-start justify-between py-[8px] px-[100px] gap-[20px] text-[14px] text-[#aeaeae] font-[Geist] mq825:flex-wrap mq825:pl-[50px] mq825:pr-[50px] mq825:box-border mq450:pl-[20px] mq450:pr-[20px] mq450:box-border">
-        <div className="w-[260.2px] relative leading-[26px] font-medium inline-block shrink-0">
+        <div className="w-[260.2px] mq450:pl-[10px] relative leading-[26px]  font-medium inline-block shrink-0">
           © Copyright 2024, All Rights Reserved
         </div>
-        <div className="w-[256.1px] relative leading-[26px] font-medium whitespace-pre-wrap text-right inline-block shrink-0">{`Privacy Policy   Terms & Conditions`}</div>
+        <div className="w-[256.1px] relative leading-[26px] mq450:pl-[10px] font-medium whitespace-pre-wrap inline-block shrink-0">{`Privacy Policy   Terms & Conditions`}</div>
       </div>
     </footer>
   );

@@ -33,8 +33,8 @@ const WorkSection: FunctionComponent<WorkSectionType> = ({ className = "" }) => 
       className={`self-stretch overflow-hidden flex flex-col items-center justify-start py-[64px] px-[80px] box-border max-w-full z-[1] text-center text-[56px] text-[#212121] font-[Franie] ${className}`}
     >
       <div className="flex-1 flex flex-col items-center justify-start gap-[64px] max-w-full">
-        <div className="w-full flex flex-col items-center justify-center gap-[16px]">
-          <h1 className="m-[0px] self-stretch relative text-inherit tracking-[-0.02em] leading-[72px] font-normal font-[inherit] mq825:text-[45px] mq825:leading-[58px] mq450:text-[34px] mq450:leading-[43px]">
+        <div className="w-full flex flex-col items-center justify-center gap-[6px]">
+          <h1 className="m-[0px] self-stretch relative text-inherit tracking-[-0.02em] leading-[72px] font-normal font-[inherit] mq825:text-[45px] mq825:leading-[58px] mq450:text-[40px] mq450:leading-[43px]">
             Our Recent Work
           </h1>
           <div className="relative text-[14px] tracking-[-0.02em] leading-[20px] font-[Inter] text-[#605f5f] max-w-full text-center mx-auto">

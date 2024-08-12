@@ -35,7 +35,7 @@ const Homepage: FunctionComponent = () => {
           <div className="self-stretch relative leading-7 ">
             {testimonialData.title}
           </div>
-          <h1 className="m-0 self-stretch relative text-56px leading-[64px] font-normal font-inherit text-gray-900 mq825:text-5xl mq825:leading-[60px] mq450:text-4xl mq450:leading-9">
+          <h1 className="m-0 self-stretch relative text-56px leading-[64px] font-normal font-inherit text-gray-900 mq825:text-5xl mq825:leading-[60px] mq450:text-5xl mq450:leading-10">
   {testimonialData.heading}
 </h1>
 

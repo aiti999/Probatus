@@ -14,12 +14,13 @@ const Navbar: FunctionComponent<NavbarProps> = ({ navigationItems, className = '
 
   return (
     <header className={`fixed top-0 left-1 right-12 py-5 px-12 z-50 bg-opacity-85 flex items-center justify-between ${className}`}>
-      <img
+      <div><img
         className="h-11 w-32 object-cover"
         loading="lazy"
         alt="Logo"
         src="/artboard-5-2@2x.png"
       />
+      </div>
       
       {/* Desktop Navigation */}
       <nav className="flex mq450:hidden flex-row items-center pr-12 justify-end gap-10 text-center font-semibold text-gray-300">
@@ -31,12 +32,13 @@ const Navbar: FunctionComponent<NavbarProps> = ({ navigationItems, className = '
             {item.name}
           </a>
         ))}
-        <button className="cursor-pointer border border-solid bg-color-rgba(23, 23, 23, 1) border-gray-900 py-1.5 px-3 ml-44 bg-gray-800 rounded-lg flex flex-row items-center justify-center gap-2">
+      <div>  <button className="cursor-pointer border border-solid bg-color-rgba(23, 23, 23, 1) border-gray-900 py-1.5 px-3 ml-44 bg-gray-800 rounded-lg flex flex-row items-center justify-center gap-2">
           <a className="hover:border-neutral-600 no-underline relative text-sm leading-5 capitalize text-gray-200 inline-block" href="#book">
             Book a Call
           </a>
           <div className="w-1.5 h-1.5 rounded-full bg-green-500" />
         </button>
+        </div>
       </nav>
 
       {/* Mobile Hamburger Button */}
