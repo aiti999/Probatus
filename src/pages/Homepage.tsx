@@ -7,10 +7,7 @@ import WhyChooseUs  from "../components/WhyChooseUs";
 import Testimonial from "../components/Testimonials";
 import Form from "../components/Form";
 import Footer from "../components/Footer/Footer";
-// import Header from "../components/Header/Header";
 import AboutUs from "../components/AboutUs";
-// import NewsSlider from "../components/NewsSlider";
-// import Navbar from "../components/Header/Navbar"
 import Navbar from "../components/Header/navbar"
 import FrameComponent1 from "../components/FrameComponent1";
 const testimonialData = {
