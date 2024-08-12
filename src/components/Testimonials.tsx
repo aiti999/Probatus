@@ -12,7 +12,7 @@ const socialIcons = [
 
 const cardData = [
   {
-    oval: "Oval.svg",
+    oval: "card.png",
     description:
       "Client D's mobile app project was in need of a revamp. Probatus revamped the app's UI/UX design, resulting in a 30% increase in user retention and a 20% boost in app ratings. Client D's app is now a user-favorite, driving higher engagement and satisfaction.",
     userName: "Leslie Alexander",
@@ -20,7 +20,7 @@ const cardData = [
     iconSrc: "/favourite31.svg",
   },
   {
-    oval: "Oval.svg",
+    oval: "card.png",
     description:
       "Client D's mobile app project was in need of a revamp. Probatus revamped the app's UI/UX design, resulting in a 30% increase in user retention and a 20% boost in app ratings. Client D's app is now a user-favorite, driving higher engagement and satisfaction.",
     userName: "Leslie Alexander",
@@ -28,7 +28,7 @@ const cardData = [
     iconSrc: "/favourite31.svg",
   },
   {
-    oval: "Oval.svg",
+    oval: "card.png",
     description:
       "Client D's mobile app project was in need of a revamp. Probatus revamped the app's UI/UX design, resulting in a 30% increase in user retention and a 20% boost in app ratings. Client D's app is now a user-favorite, driving higher engagement and satisfaction.",
     userName: "Leslie Alexander",

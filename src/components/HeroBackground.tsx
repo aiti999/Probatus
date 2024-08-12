@@ -13,7 +13,7 @@ const HeroBackground: FunctionComponent<HeroBackgroundType> = ({
     >
       <div className="w-[740px] flex flex-col items-start justify-start gap-3 max-w-full">
         <div className="self-stretch flex flex-row items-start justify-start relative max-w-full">
-          <h1 className="m-0 flex-1 relative text-inherit inline-block max-w-full leading-[40px] font-inherit text-6xl mq800:leading-[40px] mq1150:text-4xl mq1150:leading-[30px]">
+          <h1 className="m-0 flex-1 relative text-inherit inline-block max-w-full leading-[50px] font-inherit text-6xl">
             <span className="text-[70px] font-thin">Unlocking Success</span>{" "}
             <br />
             <span className="text-[70px] font-thin">
