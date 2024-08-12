@@ -1,22 +1,13 @@
-"use client"
-
 import React, { FunctionComponent, useState } from 'react';
 // import Hamburger from 'hamburger-react'
 import { GiHamburgerMenu } from "react-icons/gi";
 
-export type ComponentType = {
+export type NavbarProps = {
+  navigationItems: { name: string; minWidth: number }[];
   className?: string;
 };
 
-const navigationItems = [
-  { name: 'About', minWidth: 41 },
-  { name: 'Services', minWidth: 59 },
-  { name: 'Process', minWidth: 54 },
-  { name: 'Testimonial', minWidth: 77 }, 
-  { name: 'Why Probatus', minWidth: 95 },
-];
-
-const Navbar: FunctionComponent<ComponentType> = ({ className = '' }) => {
+const Navbar: FunctionComponent<NavbarProps> = ({ navigationItems, className = '' }) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const toggleSidebar = () => {
@@ -26,31 +17,32 @@ const Navbar: FunctionComponent<ComponentType> = ({ className = '' }) => {
   };
 
   return (
-<header className={`fixed bg-[url('/public/component-1@3x.png')] top-0 left-0 right-0 py-4 md:px-20 px-4 z-50  bg-opacity-85 flex bg-cover bg-no-repeat bg-top items-center justify-between ${className}`}>
-<img
+    <header className={`fixed top-0 left-1 right-12 py-5 px-12 z-50 bg-opacity-85 flex items-center justify-between ${className}`}>
+      <div><img
         className="h-11 w-32 object-cover"
         loading="lazy"
         alt="Logo"
         src="/artboard-5-2@2x.png"
       />
+      </div>
       
       {/* Desktop Navigation */}
-      <nav className=" flex mq450:hidden flex-row items-center justify-end gap-10 text-center font-semibold text-gray-300">
-      {navigationItems.map((item) => (
+      <nav className="flex mq450:hidden flex-row items-center pr-12 justify-end gap-10 text-center font-semibold text-gray-300">
+        {navigationItems.map((item) => (
           <a
             key={item.name}
-            className="relative leading-5 hover:text-white font-semibold text-inherit inline-block no-underline"
-            // href={#${item.name.toLowerCase()}}
+            className="relative leading-5 cursor-pointer hover:text-white font-semibold text-inherit inline-block no-underline"
           >
             {item.name}
           </a>
         ))}
-        <button className="cursor-pointer border border-solid border-gray-900 py-1.5 px-3 ml-44 bg-gray-800 rounded-lg flex flex-row items-center justify-center gap-1.5">
-          <a className="hover:border-neutral-600 relative text-sm leading-5 capitalize font-inter text-gray-200 inline-block" href="#book">
+      <div>  <button className="cursor-pointer border border-solid bg-color-rgba(23, 23, 23, 1) border-gray-900 py-1.5 px-3 ml-44 bg-gray-800 rounded-lg flex flex-row items-center justify-center gap-2">
+          <a className="hover:border-neutral-600 no-underline relative text-sm leading-5 capitalize text-gray-200 inline-block" href="#book">
             Book a Call
           </a>
           <div className="w-1.5 h-1.5 rounded-full bg-green-500" />
         </button>
+        </div>
       </nav>
 
       {/* Mobile Hamburger Button */}
@@ -90,7 +82,6 @@ const Navbar: FunctionComponent<ComponentType> = ({ className = '' }) => {
               <a
                 key={item.name}
                 className="relative leading-5 hover:text-white font-semibold text-inherit inline-block no-underline"
-                // href={#${item.name.toLowerCase()}}
                 onClick={toggleSidebar}
               >
                 {item.name}

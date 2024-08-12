@@ -18,7 +18,7 @@ const Process: FunctionComponent<ProcessType> = ({ className = "" }) => {
     >
       <div className="self-stretch flex flex-row items-start justify-between max-w-full gap-[20px] mq1400:flex-wrap">
         <div className="w-[547px] flex flex-col items-start justify-start gap-[16px] min-w-[547px] max-w-full mq825:min-w-full mq1400:flex-1">
-          <h1 className="m-[0px] self-stretch relative text-inherit tracking-[-0.02em] leading-[72px] font-normal font-[inherit] text-[56px] mq450:text-[56px] mq450:leading-[43px]">
+          <h1 className="m-[0px] self-stretch relative text-inherit tracking-[-0.02em] leading-[72px] font-normal font-[inherit] text-[56px] mq450:text-[50px] mq450:leading-[48px]">
             Our Approach to <br /> Project Delivery.
           </h1>
           <div className="w-[411px] relative text-[14px] tracking-[-0.02em] leading-[20px] font-[Inter] text-[#605f5f] inline-block max-w-full">
