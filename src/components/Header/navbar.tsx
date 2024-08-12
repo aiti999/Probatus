@@ -1,6 +1,8 @@
 "use client"
 
 import React, { FunctionComponent, useState } from 'react';
+// import Hamburger from 'hamburger-react'
+import { GiHamburgerMenu } from "react-icons/gi";
 
 export type ComponentType = {
   className?: string;
@@ -19,6 +21,8 @@ const Navbar: FunctionComponent<ComponentType> = ({ className = '' }) => {
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
+    
+    
   };
 
   return (
@@ -50,9 +54,9 @@ const Navbar: FunctionComponent<ComponentType> = ({ className = '' }) => {
       </nav>
 
       {/* Mobile Hamburger Button */}
-      <button className="ss:hidden text-white z-50" onClick={toggleSidebar} aria-label="Toggle menu">
+      <button className="ss:hidden text-white relative  bg-transparent z-50" onClick={toggleSidebar} aria-label="Toggle menu">
 
-        <svg
+        {/* <svg
           className="w-6 h-6"
           fill="none"
           stroke="currentColor"
@@ -65,14 +69,15 @@ const Navbar: FunctionComponent<ComponentType> = ({ className = '' }) => {
             strokeWidth={2}
             d="M4 6h16M4 12h16M4 18h16"
           />
-        </svg>
+        </svg> */}
+        <GiHamburgerMenu className='w-8 h-8' />
       </button>
       
       {/* Mobile Sidebar */}
-      <div className={`md:hidden fixed top-0 right-0 h-full w-64 bg-black transform ${isSidebarOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out z-40`}>
+      <div className={`md:hidden fixed top-0 right-0 h-1/2 w-[27rem] bg-[url('/public/component-1@3x.png')]  transform ${isSidebarOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out z-40`}>
         <div className="flex flex-col h-full p-4">
           <button
-            className="self-end text-white mb-8"
+            className="self-end text-white absolute bg-black mb-8"
             onClick={toggleSidebar}
             aria-label="Close menu"
           >
@@ -80,7 +85,7 @@ const Navbar: FunctionComponent<ComponentType> = ({ className = '' }) => {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
             </svg>
           </button>
-          <nav className="flex flex-col items-start justify-start gap-6 text-center font-semibold text-gray-300">
+          <nav className="flex flex-col items-center justify-center relative top-24 gap-6 text-center font-semibold text-gray-300">
             {navigationItems.map((item) => (
               <a
                 key={item.name}
@@ -93,7 +98,7 @@ const Navbar: FunctionComponent<ComponentType> = ({ className = '' }) => {
             ))}
           </nav>
           <div className="mt-auto">
-            <button className="cursor-pointer border border-solid border-gray-900 py-1.5 px-3 bg-gray-800 rounded-lg flex flex-row items-center justify-center gap-1.5 w-full">
+            <button className="cursor-pointer border mb-20 ml-16 border-solid left-16 border-gray-900 py-1.5 px-1 bg-gray-800 rounded-lg flex flex-row items-center justify-center gap-1.5 w-2/3">
               <a className="hover:border-neutral-600 relative text-sm leading-5 capitalize font-inter text-gray-200 inline-block" href="#book">
                 Book a Call
               </a>

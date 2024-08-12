@@ -26,7 +26,7 @@ const Homepage: FunctionComponent = () => {
     <Navbar/>
      
     <div className="w-full relative bg-white overflow-hidden flex flex-col items-start justify-start pt-1 px-0 pb-0 box-border leading-normal tracking-normal font-sans">
-      <section className="self-stretch h-[812px] flex flex-col items-start justify-start pt-[191px] pb-[254px] box-border gap-[112px] bg-[url('/public/hero@3x.png')] bg-cover bg-no-repeat bg-top mix-blend-linear-burn max-w-full lg:pt-[124px] lg:pb-[165px] lg:gap-[56px] mq825:pt-[81px] mq825:pb-[107px] mq825:gap-[28px]">
+      <section className="self-stretch ss:h-[812px] h-[620px] flex flex-col items-start justify-start pt-[191px] pb-[254px] box-border gap-[112px] bg-[url('/public/hero@3x.png')] bg-cover bg-no-repeat bg-top mix-blend-linear-burn max-w-full lg:pt-[124px] lg:pb-[165px] lg:gap-[56px] mq825:pt-[81px] mq825:pb-[107px] mq825:gap-[28px]">
        
         <HeroBackground />
       </section>

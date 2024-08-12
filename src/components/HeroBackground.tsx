@@ -9,14 +9,14 @@ const HeroBackground: FunctionComponent<HeroBackgroundType> = ({
 }) => {
   return (
     <div
-      className={`self-stretch flex flex-row items-start justify-center py-0 px-5 box-border max-w-full text-center text-6xl text-white font-franie ${className}`}
+      className={`self-stretch flex flex-row items-start justify-center py-0 px-5 box-border  max-w-full  text-center ss:mt-0 mt-14 text-6xl text-white font-franie ${className}`}
     >
       <div className="w-[740px] flex flex-col items-start justify-start gap-3 max-w-full">
         <div className="self-stretch flex flex-row items-start justify-start relative max-w-full">
-          <h1 className="m-0 flex-1 relative text-inherit inline-block max-w-full leading-[50px] font-inherit text-6xl">
-            <span className="text-[70px] font-thin">Unlocking Success</span>{" "}
+          <h1 className="m-0 flex-1 relative text-inherit inline-block max-w-full leading-[50px] font-inherit mq1400:text-6xl text-56px">
+            <span className="ss:text-[70px] text-[30px] font-thin">Unlocking Success</span>{" "}
             <br />
-            <span className="text-[70px] font-thin">
+            <span className="ss:text-[70px] text-[30px]   font-thin">
               with <span className="font-bold text-[#ffffff]">Proven</span>,{" "}
               <span className="font-bold text-[#ffffff]">Tried</span> and{" "}
               <span className="font-bold text-[#ffffff]">Tested</span> Solutions

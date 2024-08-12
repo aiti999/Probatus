@@ -38,12 +38,12 @@ const WorkSection: FunctionComponent<WorkSectionType> = ({ className = "" }) => 
             Our Recent Work
           </h1>
           <div className="relative text-[14px] tracking-[-0.02em] leading-[20px] font-[Inter] text-[#605f5f] max-w-full text-center mx-auto">
-            <p className="max-w-[600px] mx-auto leading-[28px] font-[Inter] text-[16px]">
+            <p className="ss:max-w-[600px]  ss:mx-auto mq450:p-0 leading-[28px] font-[Inter] text-[16px]">
               At Probatus, we have a structured and collaborative approach to project delivery that ensures successful outcomes for our clients. Our methodology is built on industry best practices, meticulous planning, and a commitment to quality at every stage of the project lifecycle.
             </p>
           </div>
         </div>
-        <div className="flex flex-wrap justify-between gap-[32px] w-full mq450:flex-col">
+        <div className="flex flex-wrap justify-between gap-[32px] ss:w-full w-[24rem] mq450:flex-col">
           {workItems.map((item, index) => (
             <div key={index} className="w-[calc(50%-16px)] flex flex-col items-start justify-start gap-[16px] mq450:w-full">
               <img
