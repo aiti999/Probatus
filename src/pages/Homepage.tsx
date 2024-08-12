@@ -7,9 +7,11 @@ import WhyChooseUs  from "../components/WhyChooseUs";
 import FrameComponent1 from "../components/FrameComponent1";
 import Form from "../components/Form";
 import Footer from "../components/Footer/Footer";
-import Header from "../components/Header/Header";
+// import Header from "../components/Header/Header";
 import AboutUs from "../components/AboutUs";
-
+// import NewsSlider from "../components/NewsSlider";
+// import Navbar from "../components/Header/Navbar"
+import Navbar from "../components/Header/navbar"
 const testimonialData = {
   title: "Testimonial",
   heading: "Our clients say about us",
@@ -19,7 +21,9 @@ const testimonialData = {
 const Homepage: FunctionComponent = () => {
   return (
     <>
-     <Header />
+     {/* <Header /> */}
+    <Navbar/>
+     
     <div className="w-full relative bg-white overflow-hidden flex flex-col items-start justify-start pt-1 px-0 pb-0 box-border leading-normal tracking-normal font-sans">
       <section className="self-stretch h-[812px] flex flex-col items-start justify-start pt-[191px] pb-[254px] box-border gap-[112px] bg-[url('/public/hero@3x.png')] bg-cover bg-no-repeat bg-top mix-blend-linear-burn max-w-full lg:pt-[124px] lg:pb-[165px] lg:gap-[56px] mq825:pt-[81px] mq825:pb-[107px] mq825:gap-[28px]">
        
@@ -42,6 +46,7 @@ const Homepage: FunctionComponent = () => {
         </div>
       </section>
       <FrameComponent1 />
+      {/* <NewsSlider /> */}
       <Form />
       <Footer />
     </div>

@@ -28,7 +28,7 @@ const FrameComponent1: FunctionComponent<FrameComponent1Type> = ({
         </div>
       </div> <br />
       <div className="self-stretch flex flex-row items-start justify-center pt-0 px-5 pb-20">
-        <div className="w-24 flex relative left-25 top-12 flex-row items-start justify-between gap-5">
+        <div className="w-24 flex relative left-20 top-12 flex-row items-start justify-between gap-5">
           {socialIcons.map((icon) => (
             <img
               key={icon.alt}
