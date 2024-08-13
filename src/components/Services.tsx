@@ -30,7 +30,7 @@ const serviceData = [
 
 const Services: FunctionComponent<ServicesType> = ({ className = "" }) => {
   return (
-    <section
+    <section id="services"
       className={`self-stretch bg-[#f9f9f9] overflow-hidden flex flex-col items-start justify-start p-[80px] text-center text-[40px] text-[#212121] font-[Franie] mq825:py-[52px] mq825:px-[40px] mq825:box-border ${className}`}
     >
       <div className="self-stretch flex flex-col items-center justify-start gap-[64px] ">
