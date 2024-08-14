@@ -22,7 +22,7 @@ export type ContactInfoType = {
 
 const ContactInfo: FunctionComponent<ContactInfoType> = ({ email, phone }) => (
   <FooterSection title="Contact Info">
-    <div className="flex flex-col items-start justify-start gap-[16px] text-center text-[14px] text-[#e0dfe1]">
+    <div className="flex flex-col items-start justify-start gap-[10px] text-center text-[14px] text-[#e0dfe1]">
       <div className="relative leading-[20px] font-medium inline-block min-w-[123px] whitespace-nowrap">
         {email}
       </div>
@@ -39,7 +39,7 @@ export type SocialLinksType = {
 
 const SocialLinks: FunctionComponent<SocialLinksType> = ({ links }) => (
   <FooterSection title="Connect With Us">
-    <div className="flex flex-row items-start justify-start pt-[1px] px-[0px] pb-[3px] gap-[18px]">
+    <div className="flex flex-row items-start justify-start pt-[1px] px-[0px] pb-[18px] gap-[15px]">
       {links.map(({ href, src, alt }, index) => (
         <a key={index} href={href} target="blank">
           <img
@@ -97,7 +97,7 @@ export type FooterType = {
 const Footer: FunctionComponent<FooterType> = ({ className = "" }) => {
   return (
     <footer
-      className={`self-stretch overflow-hidden flex flex-col items-start justify-start pt-[64px] px-[0px] pb-[0px] box-border gap-[196px] bg-[url('/public/footer@3x.png')] bg-cover bg-no-repeat bg-[top] max-w-full z-[1] text-left text-[16px] text-[#fff] font-[Inter] mq825:pt-[42px] mq825:box-border ${className}`}
+      className={`self-stretch overflow-hidden flex flex-col items-start justify-start pt-[64px] px-[0px] pb-[0px] box-border lg:gap-[20px] gap-[196px]  bg-[url('/public/footer@3x.png')] bg-cover bg-no-repeat bg-[top] max-w-full z-[1] text-left text-[16px] text-[#fff] font-[Inter] mq825:pt-[42px] mq825:box-border ${className}`}
     >
       <div className="self-stretch flex flex-row items-start justify-start py-[0px] px-[80px] box-border max-w-full mq825:pl-[40px] mq825:pr-[40px] mq825:box-border">
         <div className="flex-1 flex flex-row items-start justify-between max-w-full gap-[20px] lg:flex-wrap">

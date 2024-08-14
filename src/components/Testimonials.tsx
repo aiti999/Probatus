@@ -56,7 +56,7 @@ const Testimonial: FunctionComponent<TestimonialType> = ({
 
   return (
     <section id="testimonial"
-      className={`flex flex-col items-center justify-start relative left-24 pb-[102px] box-border max-w-full text-left text-[16px] text-[#605f5f] font-[Inter] mq450:pb-[66px] mq450:box-border ${className}`}
+      className={`flex flex-col items-center justify-start relative left-24 pb-[102px] box-border max-w-full text-left text-[16px] text-[#605f5f] font-[Inter] mq450:pb-[2px] mq450:box-border ${className}`}
     >
       <div className="flex flex-row items-start justify-start relative max-w-full">
         <div className="h-[450px] w-[807px] absolute !m-[0] bottom-[-70px] left-[calc(50%_-_403.5px)] rounded-[12px] [background:linear-gradient(90deg,_rgba(68,_255,_154,_0.32),_rgba(93,_199,_149,_0.32)_23.44%,_rgba(72,_255,_68,_0.32)_48.96%,_rgba(184,_255,_68,_0.32)_73.96%,_rgba(235,_255,_112,_0.32))]" />
