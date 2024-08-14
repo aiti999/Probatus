@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from './Navbar';
+import Navbar from './navbar';
 
 const navigationItems = [
   { name: 'About', minWidth: 41, link: '#about' },  // Add corresponding section IDs
