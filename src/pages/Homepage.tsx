@@ -4,7 +4,7 @@ import Services from "../components/Services";
 import WorkSection from "../components/WorkSection";
 import Process from "../components/Process";
 import WhyChooseUs  from "../components/WhyChooseUs";
-import Testimonial from "../components/Testimonials";
+import Testimonial from "../components/Testimonials/Testimonials";
 import Form from "../components/Form";
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
@@ -30,12 +30,12 @@ const Homepage: FunctionComponent = () => {
       <WorkSection />
       <Process />
       <WhyChooseUs/>
-      <section className="self-stretch flex flex-row items-start justify-center pt-0 px-5 pb-[74px] box-border max-w-full text-center text-lg text-gray-600 font-franie">
+      <section className="self-stretch flex flex-row items-start justify-center pt-0 px-5 pb-[54px] box-border max-w-full text-center text-lg text-gray-600 font-franie">
         <div className="w-[580px] flex flex-col items-start justify-start gap-2 max-w-full">
-          <div className="self-stretch relative leading-7 ">
+          <div className="self-stretch relative text-18px leading-1 ">
             {testimonialData.title}
           </div>
-          <h1 className="m-0 self-stretch relative text-56px leading-[64px] font-normal font-inherit text-gray-900 mq825:text-5xl mq825:leading-[60px] mq450:text-5xl mq450:leading-10">
+          <h1 className="m-0 self-stretch relative text-56px leading-[64px] font-normal font-inherit text-gray-900 mq825:text-4xl mq825:leading-[60px] mq450:text-4xl mq450:leading-15">
   {testimonialData.heading}
 </h1>
 

@@ -1,4 +1,4 @@
-import { FunctionComponent, useState } from "react";
+import { FunctionComponent, useState, useEffect } from "react";
 
 export type AboutUsType = {
   className?: string;
@@ -29,9 +29,15 @@ const buttonData = [
 
 const AboutUs: FunctionComponent<AboutUsType> = ({ className = "" }) => {
   const [selectedIndex, setSelectedIndex] = useState(0);
+  const [fadeClass, setFadeClass] = useState("fade-in");
+
+  useEffect(() => {
+    setFadeClass("fade-in");
+  }, [selectedIndex]);
 
   return (
-    <section id="about"
+    <section
+      id="about"
       className={`self-stretch overflow-hidden flex flex-col items-start justify-start p-[80px] box-border max-w-full z-[2] text-left text-[40px] text-[#212121] font-[Franie] mq825:pl-[40px] mq825:pr-[40px] mq825:box-border mq450:pt-[52px] mq450:pb-[52px] mq450:box-border ${className}`}
     >
       <div
@@ -56,7 +62,10 @@ const AboutUs: FunctionComponent<AboutUsType> = ({ className = "" }) => {
                         ? "border-[#212121]"
                         : "border-[rgba(33,33,33,0.5)]"
                     }`}
-                    onClick={() => setSelectedIndex(i * 2 + index)}
+                    onClick={() => {
+                      setFadeClass("");
+                      setTimeout(() => setSelectedIndex(i * 2 + index), 0); 
+                    }}
                     style={
                       button.label === "Key Strengths"
                         ? { minWidth: "180px" }
@@ -79,8 +88,8 @@ const AboutUs: FunctionComponent<AboutUsType> = ({ className = "" }) => {
           </div>
         </div>
         <div className="w-[730px] flex flex-col items-start justify-start py-[0px] px-[0px] box-border gap-[24px] min-w-[730px] max-w-full lg:min-w-full mq1400:flex-1">
-          <div className="self-stretch flex flex-col items-start justify-start gap-[16px]">
-            <h1 className="m-[0px] w-[272px] relative text-inherit tracking-[-0.02em] leading-[56px] font-normal font-[inherit] inline-block mq825:text-[32px] mq825:leading-[45px] mq450:text-[36px] mq450:leading-[34px]">
+          <div className={`self-stretch flex flex-col items-start justify-start gap-[16px] ${fadeClass}`}>
+            <h1 className="m-[0px] w-[272px] relative text-inherit tracking-[-0.02em] leading-[56px] font-normal font-[inherit] inline-block mq825:text-[32px] mq825:leading-[45px] mq450:text-[32px] mq450:leading-[34px]">
               {buttonData[selectedIndex].label}
             </h1>
             <div className="self-stretch relative text-[16px] tracking-[-0.02em] leading-[24px] font-[Inter] text-[#605f5f]">

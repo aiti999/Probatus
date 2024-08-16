@@ -5,7 +5,7 @@ export type TestimonialType = {
   className?: string;
 };
 
-const socialIcons = [
+const arrowIcons = [
   { alt: "Frame 5", src: "/frame-5.svg", direction: "prev" },
   { alt: "Frame 6", src: "/frame-6.svg", direction: "next" },
 ];
@@ -74,9 +74,9 @@ const Testimonial: FunctionComponent<TestimonialType> = ({
         </div>
       </div>
       <br />
-      <div className="w-full flex flex-row items-center justify-center pt-14 px-5 pb-20">
-        <div className="flex relative flex-row items-start gap-5 mq450:right-24 ">
-          {socialIcons.map((icon) => (
+      <div className="w-full flex flex-row slider-container items-center justify-center pt-14 px-5 pb-10">
+        <div className="flex relative flex-row items-center justify-center pr-12 gap-8 mq450:right-24 ">
+          {arrowIcons.map((icon) => (
             <img
               key={icon.alt}
               className="h-8 w-8 cursor-pointer"

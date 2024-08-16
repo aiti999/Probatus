@@ -34,7 +34,7 @@ const Services: FunctionComponent<ServicesType> = ({ className = "" }) => {
       className={`self-stretch bg-[#f9f9f9] overflow-hidden flex flex-col items-start justify-start p-[80px] text-center text-[40px] text-[#212121] font-[Franie] mq825:py-[52px] mq825:px-[40px] mq825:box-border ${className}`}
     >
       <div className="self-stretch flex flex-col items-center justify-start gap-[64px] ">
-      <h1 className="m-[0px] self-stretch relative !text-[45px] tracking-[-0.02em] leading-[56px] font-normal font-[inherit]">
+      <h1 className="m-[0px] self-stretch relative justify-center pl-2 !text-[45px] tracking-[-0.02em] leading-[56px] font-normal font-[inherit]">
   Our Services
 </h1>
 
@@ -46,14 +46,14 @@ const Services: FunctionComponent<ServicesType> = ({ className = "" }) => {
             >
               <div className="h-[192px] flex-1 flex flex-col items-center justify-start pt-[0px] px-[0px] pb-[16px] box-border gap-[16px]">
                 <img
-                  className="w-[64px] h-[64px] relative shrink-0"
+                  className="w-[64px] h-[64px] justify-center relative shrink-0"
                   loading="lazy"
-                  alt={service.title}
+                
                   src={service.imageSrc}
                 />
                 <div className="self-stretch flex flex-col items-center justify-start gap-[8px]">
                   <div className="w-[239px] flex flex-col items-center justify-start gap-[8px]">
-                    <div className="self-stretch pl-12 items-center font-bold relative leading-[24px]">
+                    <div className="self-stretch justify-center text-center font-bold relative leading-[24px]">
                       {service.title}
                     </div>
                     <div className="self-stretch relative text-[14px] tracking-[-0.02em] leading-[20px] font-[Inter] text-[#605f5f] text-center">
@@ -66,7 +66,7 @@ const Services: FunctionComponent<ServicesType> = ({ className = "" }) => {
           ))}
         </div>
         <button className="cursor-pointer border-[#1b1b1b] border-[1px] border-solid py-[10px] px-[55px] bg-[#212121] shadow-[0px_0px_0px_4px_rgba(33,_33,_33,_0.12),_0px_-2px_0px_#151515_inset,_0px_2px_0px_#343434_inset] rounded-[12px] overflow-hidden flex flex-row items-end justify-center whitespace-nowrap hover:bg-[#545454] hover:border-[#4d4d4d] hover:border-[1px] hover:border-solid hover:box-border mq450:w-[350px] mq450:h-[56px]">
-          <div className="relative text-[16px] leading-[24px] font-medium font-[Inter] text-[#fff] text-left inline-block min-w-[88px]">
+          <div className="relative text-[16px] leading-[24px] pb-1 font-medium font-[Inter] text-[#fff] text-left inline-block min-w-[88px]">
             Get started
           </div>
         </button>

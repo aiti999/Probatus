@@ -16,14 +16,14 @@ const Navbar: React.FC<NavbarProps> = ({ navigationItems, className = '' }) => {
   };
 
   return (
-    <header className={`fixed top-0 left-0 right-0 py-5 px-12 z-50 bg-opacity-105 flex items-center justify-between ${className}`}>
+    <header className={`fixed top-0 left-0 right-0 py-3 px-12 z-50 bg-opacity-95 flex items-center justify-between ${className}`}>
       {/* Logo */}
       <div>
-        <img className="h-11 w-32 object-cover" loading="lazy" alt="Logo" src="/artboard-5-2@2x.png" />
+        <img className="h-11 w-22 object-cover" loading="lazy" alt="Logo" src="/artboard-5-2@2x.png" />
       </div>
 
       {/* Navigation */}
-      <nav className="flex-1 hidden ss:flex items-center justify-center gap-10 text-center font-semibold text-gray-300">
+      <nav className="flex-1 hidden ss:flex items-center pb-2 justify-center gap-6 text-center font-semibold text-gray-300">
         {navigationItems.map((item) => (
           <a key={item.name} href={item.link} className="relative leading-5 cursor-pointer hover:text-white font-semibold text-inherit inline-block no-underline">
             {item.name}
@@ -32,7 +32,7 @@ const Navbar: React.FC<NavbarProps> = ({ navigationItems, className = '' }) => {
       </nav>
 
       {/* Book a Call Button */}
-      <div className="hidden ss:flex">
+      <div className="hidden ss:flex pb-2">
         <BookButton />
       </div>
 

@@ -27,3 +27,14 @@ body {
 ::after {
   border-width: 0;
 }
+
+.fade-in {
+  opacity: 0;
+  animation: fadeInAnimation 1.1s forwards;
+}
+
+@keyframes fadeInAnimation {
+  to {
+    opacity: 1;
+  }
+}
