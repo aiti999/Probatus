@@ -1,14 +1,12 @@
-import { FunctionComponent, useState } from "react";
+import { FunctionComponent } from "react";
+import { Splide, SplideSlide, SplideTrack } from '@splidejs/react-splide';
+import '@splidejs/react-splide/css';
+
 import Card from "./Card";
 
 export type TestimonialType = {
   className?: string;
 };
-
-const arrowIcons = [
-  { alt: "Frame 5", src: "/frame-5.svg", direction: "prev" },
-  { alt: "Frame 6", src: "/frame-6.svg", direction: "next" },
-];
 
 const cardData = [
   {
@@ -19,74 +17,50 @@ const cardData = [
     userTitle: "Freelance React Developer",
     iconSrc: "/favourite31.svg",
   },
-  {
-    oval: "card.png",
-    description:
-      "Client D's mobile app project was in need of a revamp. Probatus revamped the app's UI/UX design, resulting in a 30% increase in user retention and a 20% boost in app ratings. Client D's app is now a user-favorite, driving higher engagement and satisfaction.",
-    userName: "Leslie Alexander",
-    userTitle: "Freelance React Developer",
-    iconSrc: "/favourite31.svg",
-  },
-  {
-    oval: "card.png",
-    description:
-      "Client D's mobile app project was in need of a revamp. Probatus revamped the app's UI/UX design, resulting in a 30% increase in user retention and a 20% boost in app ratings. Client D's app is now a user-favorite, driving higher engagement and satisfaction.",
-    userName: "Leslie Alexander",
-    userTitle: "Freelance React Developer",
-    iconSrc: "/favourite31.svg",
-  },
+  // Add more card data as needed...
 ];
 
-const Testimonial: FunctionComponent<TestimonialType> = ({
-  className = "",
-}) => {
-  const [startIndex, setStartIndex] = useState(0);
-
-  const handleNavigation = (direction: string) => {
-    if (direction === "next") {
-      setStartIndex((prevIndex) =>
-        prevIndex + 1 < cardData.length ? prevIndex + 1 : 0
-      );
-    } else {
-      setStartIndex((prevIndex) =>
-        prevIndex - 1 >= 0 ? prevIndex - 1 : cardData.length - 1
-      );
-    }
-  };
-
+const Testimonial: FunctionComponent<TestimonialType> = ({ className = "" }) => {
   return (
-    <section id="testimonial"
-      className={`flex flex-col items-center justify-start relative left-24 pb-[102px] box-border max-w-full text-left text-[16px] text-[#605f5f] font-[Inter] mq450:pb-[2px] mq450:box-border ${className}`}
+    <section
+      id="testimonial"
+      className={`flex flex-col items-center justify-start relative left-0 pb-[102px] box-border max-w-full text-left text-[16px] text-[#605f5f] font-[Inter] mq450:pb-[2px] mq450:box-border ${className}`}
     >
-      <div className="flex flex-row items-start justify-start relative max-w-full">
-        <div className="h-[450px] w-[807px] absolute !m-[0] bottom-[-70px] left-[calc(50%_-_403.5px)] rounded-[12px] [background:linear-gradient(90deg,_rgba(68,_255,_154,_0.32),_rgba(93,_199,_149,_0.32)_23.44%,_rgba(72,_255,_68,_0.32)_48.96%,_rgba(184,_255,_68,_0.32)_73.96%,_rgba(235,_255,_112,_0.32))]" />
-        <div className="w-[1440px] shrink-0 flex flex-row items-center justify-center py-[0px] px-[0px] box-border overflow-y-hidden overflow-x-hidden max-w-full z-[1] gap-[16px] relative mq450:right-24 mq450:top-12">
-          {cardData.slice(startIndex, startIndex + 3).map((card, index) => (
-            <Card
-              key={index}
-              oval={card.oval}
-              description={card.description}
-              userName={card.userName}
-              userTitle={card.userTitle}
-              iconSrc={card.iconSrc}
-            />
+      <div className="absolute bottom-24 w-[55%] h-[437px]  rounded-[12px] z-[0] bg-gradient-to-r from-green-300 to-yellow-200 ..."></div>
+
+      <Splide
+        options={{
+          type: 'loop',
+          padding: '5rem',
+          perPage: 3,
+          gap: '3rem',
+          pagination: false,
+        }}
+        hasTrack={false} // Disable the default track
+        className="w-full"
+      >
+        <SplideTrack>
+          {cardData.map((card, index) => (
+            <SplideSlide key={index}>
+              <Card
+                oval={card.oval}
+                description={card.description}
+                userName={card.userName}
+                userTitle={card.userTitle}
+                iconSrc={card.iconSrc}
+              />
+            </SplideSlide>
           ))}
+        </SplideTrack>
+        <div className="splide__arrows flex justify-center mt-4 relative left-4 top-8">
+          <button className="splide__arrow splide__arrow--prev bg-white text-[24px] font-bold text-black px-5 py-4 rounded-md mx-2 top-[22%] left-[46%]">
+            &#60;
+          </button>
+          <button className="splide__arrow splide__arrow--next bg-white text-[24px] font-bold text-black px-5 py-4 rounded-md mx-2 top-[23%] right-[45%]">
+            &#62;
+          </button>
         </div>
-      </div>
-      <br />
-      <div className="w-full flex flex-row slider-container items-center justify-center pt-14 px-5 pb-10">
-        <div className="flex relative flex-row items-center justify-center pr-12 gap-8 mq450:right-24 ">
-          {arrowIcons.map((icon) => (
-            <img
-              key={icon.alt}
-              className="h-8 w-8 cursor-pointer"
-              alt={icon.alt}
-              src={icon.src}
-              onClick={() => handleNavigation(icon.direction)}
-            />
-          ))}
-        </div>
-      </div>
+      </Splide>
     </section>
   );
 };
