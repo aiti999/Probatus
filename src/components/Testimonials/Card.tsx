@@ -13,7 +13,6 @@ export type CardType = {
 const Card: FunctionComponent<CardType> = ({
   className = "",
   oval,
-  title,
   description,
   userName,
   userTitle,
@@ -21,7 +20,7 @@ const Card: FunctionComponent<CardType> = ({
 }) => {
   return (
     <div
-      className={`w-[514px] bg-[#fff] border-[#f3efff] border-[1px] border-solid box-border shrink-0 flex flex-col items-start justify-start py-[50px] px-[31px] max-w-full text-left text-[16px] text-[#605f5f] font-[Inter] mq825:w-[calc(100%_-_40px)] ${className}`}
+      className={`w-[514px] bg-[#fff] border-[#f3efff] border-[1px] border-solid box-border shrink-0 flex flex-col items-start justify-start py-[50px] px-[31px] max-w-full text-left text-[16px] text-[#605f5f] font-[Inter] mq825:w-[calc(100%_-_40px)] mq450:w-full mq450:py-[32px] mq450:px-[20px] ${className}`}
     >
       <div className="self-stretch flex flex-col items-start justify-start gap-[22px]">
         <img
@@ -30,10 +29,10 @@ const Card: FunctionComponent<CardType> = ({
           alt="Icon"
           src={iconSrc}
         />
-        <div className="self-stretch relative leading-[28px]">
+        <div className="self-stretch relative leading-[28px] mq450:text-[14px] mq450:leading-[24px]">
           {description}
         </div>
-        <div className="w-[236px] h-[54px] flex flex-row items-center justify-start text-[#18181b] font-[Franie]">
+        <div className="w-full flex flex-row items-center justify-start text-[#18181b] font-[Franie]">
           <img
             className="h-[40px] w-[40px] rounded-full object-cover mr-4"
             loading="lazy"
@@ -44,7 +43,7 @@ const Card: FunctionComponent<CardType> = ({
             <b className="self-stretch relative leading-[28px]">
               {userName}
             </b>
-            <div className=" flex-1 flex flex-col items-start justify-start text-[14px] leading-[22px] font-[Inter] text-[#52525b]">
+            <div className="flex-1 flex flex-col items-start justify-start text-[14px] leading-[22px] font-[Inter] text-[#52525b]">
               {userTitle}
             </div>
           </div>

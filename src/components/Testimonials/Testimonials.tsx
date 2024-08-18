@@ -1,7 +1,6 @@
 import { FunctionComponent } from "react";
 import { Splide, SplideSlide, SplideTrack } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
-
 import Card from "./Card";
 
 export type TestimonialType = {
@@ -17,7 +16,7 @@ const cardData = [
     userTitle: "Freelance React Developer",
     iconSrc: "/favourite31.svg",
   },
-  // Add more card data as needed...
+  // Add more card data as needed
 ];
 
 const Testimonial: FunctionComponent<TestimonialType> = ({ className = "" }) => {
@@ -26,19 +25,25 @@ const Testimonial: FunctionComponent<TestimonialType> = ({ className = "" }) => 
       id="testimonial"
       className={`flex flex-col items-center justify-start relative left-0 pb-[102px] box-border max-w-full text-left text-[16px] text-[#605f5f] font-[Inter] mq450:pb-[2px] mq450:box-border ${className}`}
     >
-      <div className="absolute bottom-24 w-[55%] h-[437px]  rounded-[12px] z-[0] bg-gradient-to-r from-green-300 to-yellow-200 ..."></div>
+      <div className="absolute bottom-24 w-[55%] h-[437px]  rounded-[12px] z-[0] bg-gradient-to-r from-green-300 to-yellow-200 mq450:w-full mq450:h-[300px]"></div>
 
       <Splide
-        options={{
-          type: 'loop',
-          padding: '5rem',
-          perPage: 3,
-          gap: '3rem',
-          pagination: false,
-        }}
-        hasTrack={false} // Disable the default track
-        className="w-full"
-      >
+  options={{
+    type: 'loop',
+    perPage: 3, // Default for PC
+    gap: '3rem',
+    pagination: false,
+    breakpoints: {
+      768: {
+        perPage: 1, 
+        gap: '1rem', 
+        padding: '0rem', 
+      },
+    },
+  }}
+  hasTrack={false} 
+  className="w-full"
+>
         <SplideTrack>
           {cardData.map((card, index) => (
             <SplideSlide key={index}>

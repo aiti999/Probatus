@@ -20,7 +20,7 @@ const WhyChooseUs: FunctionComponent<WhyChooseUs> = ({ className = "" }) => {
 
           <div className="flex-1 flex flex-col items-start justify-start gap-[24px] min-w-[406px] max-w-full mq825:min-w-full">
             <div className="self-stretch flex flex-col items-start justify-start gap-[16px]">
-              <h1 className="m-[0px] self-stretch relative text-inherit tracking-[-0.02em] leading-[56px] font-normal font-[inherit] mq825:text-[32px] mq825:leading-[45px] mq450:text-[24px] mq450:leading-[34px]">
+              <h1 className="m-[0px] self-stretch relative text-inherit tracking-[-0.02em] leading-[56px] font-normal font-[inherit] mq825:text-[32px] mq825:leading-[45px] mq450:text-[56px] mq450:leading-[56px]">
                 Why Choose Probatus?
               </h1>
               <div className="self-stretch relative text-[16px] leading-[24px] font-[Inter] text-[#605f5f]">
