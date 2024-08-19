@@ -20,7 +20,7 @@ const Card: FunctionComponent<CardType> = ({
 }) => {
   return (
     <div
-      className={`w-[514px] bg-[#fff] border-[#f3efff] border-[1px] border-solid box-border shrink-0 flex flex-col items-start justify-start py-[50px] px-[31px] max-w-full text-left text-[16px] text-[#605f5f] font-[Inter] mq825:w-[calc(100%_-_40px)] mq450:w-full mq450:py-[32px] mq450:px-[20px] ${className}`}
+      className={`w-[514px] bg-[#fff] border-[#f3efff] border-[1px] border-solid box-border shrink-0 flex flex-col items-start justify-start py-[50px] px-[31px] max-w-full text-left text-[16px] text-[#605f5f] font-[Inter] mq825:w-[calc(100%_-_40px)] mq450:w-full ${className}`}
     >
       <div className="self-stretch flex flex-col items-start justify-start gap-[22px]">
         <img

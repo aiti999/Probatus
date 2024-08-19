@@ -31,8 +31,8 @@ const HeroBackground: FunctionComponent<HeroBackgroundType> = ({
               Development, Mobile App Development, IT <br /> Consulting, and
               SaaS Solutions
             </div>
-            <div className="self-stretch h-11 flex flex-row items-start justify-center py-0 px-5 box-border">
-              <button className="cursor-pointer mq450:w-[350px] mq450:h-[56px] bg-green-500 hover:bg-green-400 border-darkgreen border-[1px] border-solid py-3 px-10 h-[46px] shadow-md rounded-xl flex flex-row items-center justify-center whitespace-nowrap">
+            <div className="self-stretch h-11 flex flex-row items-start justify-center py-0 px-5 box-border mq450:pt-[10%]">
+              <button className="cursor-pointer mq450:w-full pb-3 mq450:h-[50px] bg-green-500 hover:bg-green-400 border-darkgreen border-[1px] border-solid py-3 px-10 h-[46px] shadow-md rounded-xl flex flex-row items-center justify-center whitespace-nowrap">
                 <span className="text-base leading-5 text-[1rem] font-semibold text-gray-900">
                   Explore Our Services
                 </span>

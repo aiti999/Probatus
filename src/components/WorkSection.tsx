@@ -37,7 +37,7 @@ const WorkSection: FunctionComponent<WorkSectionType> = ({ className = "" }) => 
       className={`self-stretch overflow-hidden flex flex-col items-center justify-start py-[64px] px-[80px] box-border max-w-full z-[1] text-center text-[56px] text-[#212121] font-[Franie] ${className} mq450:py-[32px] mq450:px-[20px]`}
     >
       <div className="flex-1 flex flex-col items-center justify-start gap-[64px] mq450:gap-[3px] max-w-full">
-      <div className="w-full flex flex-col items-center justify-center gap-[6px] mq450:gap-[0px]">
+        <div className="w-full flex flex-col items-center justify-center gap-[6px] mq450:gap-[0px]">
           <h1 className="m-[0px] self-stretch relative text-inherit tracking-[-0.02em] leading-[72px] font-normal font-[inherit] mq825:text-[45px] mq825:leading-[58px] mq450:text-[40px] mq450:leading-[43px]">
             Our Recent Work
           </h1>
@@ -63,7 +63,7 @@ const WorkSection: FunctionComponent<WorkSectionType> = ({ className = "" }) => 
                 alt={item.title}
                 src={item.imageUrl}
               />
-              <div className="flex flex-col items-start justify-start gap-[4px] text-left px-[16px]">
+              <div className="flex flex-col items-start justify-start gap-[4px] text-left" style={{width: "100%", padding: "0"}}>
                 <h3 className="m-[0px] text-[24px] leading-[24px] font-normal mq450:text-[20px]">
                   {item.title}
                 </h3>

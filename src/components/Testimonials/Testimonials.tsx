@@ -23,27 +23,27 @@ const Testimonial: FunctionComponent<TestimonialType> = ({ className = "" }) => 
   return (
     <section
       id="testimonial"
-      className={`flex flex-col items-center justify-start relative left-0 pb-[102px] box-border max-w-full text-left text-[16px] text-[#605f5f] font-[Inter] mq450:pb-[2px] mq450:box-border ${className}`}
+      className={`flex flex-col items-center justify-start relative left-0 pb-[102px] box-border max-w-full text-left text-[16px] text-[#605f5f] font-[Inter] ${className}`}
     >
-      <div className="absolute bottom-24 w-[55%] h-[437px]  rounded-[12px] z-[0] bg-gradient-to-r from-green-300 to-yellow-200 mq450:w-full mq450:h-[300px]"></div>
+      <div className="absolute bottom-24 w-[55%] h-[437px] rounded-[12px] z-[0] bg-gradient-to-r from-green-300 to-yellow-200 mq450:w-[370px] mq450:h-[450px] mq450:top-[158px] mq450:left-[10px] mq450:opacity-[0.32]"></div>
 
       <Splide
-  options={{
-    type: 'loop',
-    perPage: 3, // Default for PC
-    gap: '3rem',
-    pagination: false,
-    breakpoints: {
-      768: {
-        perPage: 1, 
-        gap: '1rem', 
-        padding: '0rem', 
-      },
-    },
-  }}
-  hasTrack={false} 
-  className="w-full"
->
+        options={{
+          type: 'loop',
+          perPage: 3,
+          gap: '3rem',
+          pagination: false,
+          breakpoints: {
+            768: {
+              perPage: 1,
+              gap: '1rem',
+              padding: '1rem',
+            },
+          },
+        }}
+        hasTrack={false}
+        className="w-full mq450:w-full mq450:h-[672px] px-4 mq450:top-20"
+      >
         <SplideTrack>
           {cardData.map((card, index) => (
             <SplideSlide key={index}>
@@ -53,18 +53,19 @@ const Testimonial: FunctionComponent<TestimonialType> = ({ className = "" }) => 
                 userName={card.userName}
                 userTitle={card.userTitle}
                 iconSrc={card.iconSrc}
+                className="mq450:w-full"
               />
             </SplideSlide>
           ))}
         </SplideTrack>
-        <div className="splide__arrows flex justify-center mt-4 relative left-4 top-8">
-          <button className="splide__arrow splide__arrow--prev bg-white text-[24px] font-bold text-black px-5 py-4 rounded-md mx-2 top-[22%] left-[46%]">
-            &#60;
-          </button>
-          <button className="splide__arrow splide__arrow--next bg-white text-[24px] font-bold text-black px-5 py-4 rounded-md mx-2 top-[23%] right-[45%]">
-            &#62;
-          </button>
-        </div>
+        <div className="splide__arrows flex justify-center mt-4 relative left-4 top-8 mq450:left-[5%] mq450:top-[40%]">
+<button className="splide__arrow splide__arrow--prev bg-white text-[24px] font-bold text-black px-5 py-4 rounded-md mx-2 top-[22%] left-[46%] mq450:text-[18px] mq450:left-[30%] mq450:top-[2%]">
+  &#60;
+</button>
+<button className="splide__arrow splide__arrow--next bg-white text-[24px] font-bold text-black px-5 py-4 rounded-md mx-2 top-[23%] right-[45%] mq450:text-[18px] ">
+  &#62;
+</button>
+</div>
       </Splide>
     </section>
   );
