@@ -1,6 +1,6 @@
 import React from "react";
 import BookButton from "./BookButton";
-import { NavbarProps } from "./Navbar";
+import { NavbarProps } from "./navbar";
 
 interface MobileSidebarProps {
   isSidebarOpen: boolean;
@@ -52,7 +52,7 @@ const MobileSidebar: React.FC<MobileSidebarProps> = ({
       </div>
 
       {/* Navigation Items */}
-      <nav className="flex flex-col items-center justify-center mt-24 gap-6 text-center font-semibold text-gray-300">
+      <nav className="flex flex-col items-center justify-center mt-16 gap-6 text-center font-semibold text-gray-300">
         {navigationItems.map((item) => (
           <a
             key={item.name}
