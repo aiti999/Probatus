@@ -48,7 +48,7 @@ const WorkSection: FunctionComponent<WorkSectionType> = ({ className = "" }) => 
           </div>
         </div>
         
-        <div className="flex flex-wrap justify-between gap-[16px] w-full mq450:flex-col mq450:items-center">
+        <div className="flex flex-wrap justify-between gap-[16px] w-full mq450:flex-col mq450:items-center ">
           {workItems.map((item, index) => (
             <div
               key={index}

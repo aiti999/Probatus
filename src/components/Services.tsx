@@ -38,7 +38,7 @@ const Services: FunctionComponent<ServicesType> = ({ className = "" }) => {
   Our Services
 </h1>
 
-        <div className="self-stretch flex flex-row items-start justify-between gap-[20px] text-left text-[18px] mq1400:flex-wrap mq1400:justify-center">
+        <div className="self-stretch flex flex-row items-start justify-between gap-[20px] text-left text-[18px] mq450:flex-wrap mq1400:justify-center">
           {serviceData.map((service) => (
             <div
               key={service.title}
