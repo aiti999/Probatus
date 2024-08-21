@@ -48,10 +48,10 @@ const Testimonial: FunctionComponent<TestimonialType> = ({ className = "" }) => 
     >
         <section className="self-stretch flex flex-row items-start justify-center pt-0 px-5 pb-[54px] box-border max-w-full text-center text-lg text-gray-600 font-franie">
         <div className="w-[580px] flex flex-col items-start justify-start gap-2 max-w-full">
-          <div className="self-stretch relative text-18px leading-1 mq450:text-[1.13rem]">
+          <div className="self-stretch relative text-[18px] leading-1 mq450:text-[1.13rem]">
             {testimonialData.title}
           </div>
-          <h1 className="m-0 self-stretch relative text-56px leading-[64px] font-normal font-inherit text-gray-900 mq825:text-4xl mq825:leading-[60px] mq450:text-4xl mq450:leading-15">
+          <h1 className="m-0 self-stretch relative text-[42px] leading-[64px] font-normal font-inherit text-gray-900 mq825:text-4xl mq825:leading-[60px] mq450:text-4xl mq450:leading-15">
   {testimonialData.heading}
 </h1>
 

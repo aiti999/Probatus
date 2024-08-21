@@ -4,19 +4,14 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        'on-off': 'onOff 2s infinite',
+        'light-on-off': 'onOff 2s infinite',
       },
       keyframes: {
         onOff: {
           '0%, 100%': { backgroundColor: '#00FF00' }, // Light green
           '50%': { backgroundColor: '#171717' }, // Black
         },
-
-    screens: {
-      sm: '640px',
-      md: '768px',
-    },
-
+      },
       fontSize: {
         '56px': '56px',
         '18px': '18px',
@@ -24,10 +19,6 @@ module.exports = {
       fontFamily: {
         sans: ['PT Sans', 'sans-serif'],
       },
-    },
-
-    fontSize: {
-      inherit: "inherit",
     },
     screens: {
       mq2800: {
@@ -45,13 +36,18 @@ module.exports = {
       mq450: {
         raw: "screen and (max-width: 450px)",
       },
-      ss:{
+      ss: {
         raw: "screen and (min-width: 450px)",
-      }
+      },
+    },
+    fontSize: {
+      inherit: "inherit",
     },
   },
   corePlugins: {
     preflight: false,
   },
-},
-}
+  safelist: [
+    'animate-light-on-off', // Ensures this class isn't purged by Tailwind
+  ],
+};

@@ -14,12 +14,12 @@ const HeroBackground: FunctionComponent<HeroBackground> = ({
     >
       <div className="relative w-[740px] flex flex-col items-start justify-start gap-[16px] max-w-full">
         {/* Top Left Light */}
-        <div className="absolute top-[-10px] left-[-40px]">
+        <div className="absolute top-[-10px] left-[-10px]">
           <Light />
         </div>
 
         {/* Top Right Light */}
-        <div className="absolute top-[-10px] scale-x-[-1] right-[-40px]">
+        <div className="absolute top-[-10px] scale-x-[-1] right-[-10px]">
           <Light />
         </div>
 

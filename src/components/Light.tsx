@@ -23,6 +23,8 @@ const Light: FunctionComponent<LightType> = ({ className = "" }) => {
   const lightGreenCells = [
     { row: 1, col: 5 }, 
     { row: 1, col: 6 }, 
+    { row: 1, col: 12 }, 
+    { row: 1, col: 13 }, 
     { row: 2, col: 1 }, 
     { row: 3, col: 9 }, 
     { row: 3, col: 10 },
@@ -44,12 +46,11 @@ const Light: FunctionComponent<LightType> = ({ className = "" }) => {
             );
             return (
               <div
-              key={`${rowIndex}-${cellIndex}`}
-              className={`h-[6px] w-[6px] ${
-                isLightGreen ? "animate-on-off" : cell === "1" ? "bg-[#171717]" : ""
-              }`}
-            />
-            
+                key={`${rowIndex}-${cellIndex}`}
+                className={`h-[6px] w-[6px] ${
+                  isLightGreen ? "animate-light-on-off bg-[#00FF00]" : cell === "1" ? "bg-[#171717]" : ""
+                }`}
+              />
             );
           })
         )}
