@@ -16,8 +16,9 @@ module.exports = {
         '56px': '56px',
         '18px': '18px',
       },
-      fontFamily: {
-        sans: ['PT Sans', 'sans-serif'],
+      screens: {
+        sm: '640px',
+        md: '768px',
       },
     },
     screens: {
