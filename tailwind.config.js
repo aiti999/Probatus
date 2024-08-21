@@ -3,6 +3,15 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      animation: {
+        'on-off': 'onOff 2s infinite',
+      },
+      keyframes: {
+        onOff: {
+          '0%, 100%': { backgroundColor: '#00FF00' }, // Light green
+          '50%': { backgroundColor: '#171717' }, // Black
+        },
+
     screens: {
       sm: '640px',
       md: '768px',
@@ -44,4 +53,5 @@ module.exports = {
   corePlugins: {
     preflight: false,
   },
-};
+},
+}

@@ -6,31 +6,52 @@ export type LightType = {
 
 const Light: FunctionComponent<LightType> = ({ className = "" }) => {
   const gridPattern = [
-    "11111100111101",  // First row: 6 lights, 2 gaps, 4 lights
-    "10101100111111",  // Second row: alternating lights and gaps, ending with 4 lights
-    "11111100100110",  // Third row: 6 lights, 2 gaps, 1 light, 2 gaps
-    "11011111111111",  // Fourth row: 4 lights, 2 gaps, 4 lights
-    "11111100001100",  // Fifth row: 6 lights, 4 gaps, 2 lights
-    "11111100001100",  // Sixth row: 6 lights, 4 gaps, 2 lights
-    "11111101100100",  // Seventh row: 6 lights, 2 gaps, 1 light, 2 gaps
-    "11111100000000",  // Eighth row: 6 lights, 2 gaps, 4 lights
-    "11111110000000",  // Ninth row: 6 lights, 2 gaps, 2 lights
-    "11000110000000",  // Tenth row: 2 gaps, 4 lights, 4 gaps, 1 light
-    "11111110000000",  // Eleventh row: 6 lights, 4 gaps, 2 lights
+    "11111100011101",  
+    "10101100111111",  
+    "11111100100110",  
+    "11001001111111",  
+    "11100110000000",  
+    "11100010000000",  
+    "11111111000000",  
+    "10011111000000",  
+    "11011011000000",  
+    "11111111000000",  
+    "11010011000000",  
+    "11000111000000",  
+  ];
+
+  const lightGreenCells = [
+    { row: 1, col: 5 }, 
+    { row: 1, col: 6 }, 
+    { row: 2, col: 1 }, 
+    { row: 3, col: 9 }, 
+    { row: 3, col: 10 },
+    { row: 4, col: 3 }, 
+    { row: 4, col: 5 }, 
+    { row: 7, col: 6 }, 
+    { row: 7, col: 7 },
   ];
 
   return (
     <div
-      className={`!m-[0] absolute top-[-48px] left-[-41px] flex flex-row items-start justify-start z-[1] ${className}`}
+      className={`!m-[0] absolute top-[-40px] left-[-4px] flex flex-row items-start justify-start z-[1] ${className}`}
     >
       <div className="grid grid-cols-[repeat(14,6px)] gap-[6px] mix-blend-normal">
         {gridPattern.map((row, rowIndex) =>
-          row.split("").map((cell, cellIndex) => (
-            <div
+          row.split("").map((cell, cellIndex) => {
+            const isLightGreen = lightGreenCells.some(
+              (pos) => pos.row === rowIndex && pos.col === cellIndex
+            );
+            return (
+              <div
               key={`${rowIndex}-${cellIndex}`}
-              className={`h-[6px] w-[6px] ${cell === "1" ? "bg-[#171717]" : ""}`}
+              className={`h-[6px] w-[6px] ${
+                isLightGreen ? "animate-on-off" : cell === "1" ? "bg-[#171717]" : ""
+              }`}
             />
-          ))
+            
+            );
+          })
         )}
       </div>
     </div>
