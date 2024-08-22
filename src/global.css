@@ -32,6 +32,10 @@ body {
   opacity: 0;
   animation: fadeInAnimation 1.1s forwards;
 }
+.fade-out {
+  opacity: 1;
+  animation: fadeOutAnimation 1.1s forwards;
+}
 
 @keyframes fadeInAnimation {
   to {

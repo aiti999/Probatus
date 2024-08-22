@@ -31,9 +31,13 @@ const AboutUs: FunctionComponent<AboutUsType> = ({ className = "" }) => {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [fadeClass, setFadeClass] = useState("fade-in");
 
-  useEffect(() => {
-    setFadeClass("fade-in");
-  }, [selectedIndex]);
+  const handleClick = (index: number) => {
+    setFadeClass("fade-out");
+    setTimeout(() => {
+      setSelectedIndex(index);
+      setFadeClass("fade-in");
+    }, 200); // Adjust the duration to match your fade-out timing
+  };
 
   return (
     <section
@@ -62,10 +66,7 @@ const AboutUs: FunctionComponent<AboutUsType> = ({ className = "" }) => {
                         ? "border-[#212121]"
                         : "border-[rgba(33,33,33,0.5)]"
                     }`}
-                    onClick={() => {
-                      setFadeClass("");
-                      setTimeout(() => setSelectedIndex(i * 2 + index), 0); 
-                    }}
+                    onClick={() => handleClick(i * 2 + index)}
                     style={
                       button.label === "Key Strengths"
                         ? { minWidth: "180px" }
@@ -88,7 +89,9 @@ const AboutUs: FunctionComponent<AboutUsType> = ({ className = "" }) => {
           </div>
         </div>
         <div className="w-[730px] flex flex-col items-start justify-start py-[0px] px-[0px] box-border gap-[24px] min-w-[730px] max-w-full lg:min-w-full mq1400:flex-1">
-          <div className={`self-stretch flex flex-col items-start justify-start gap-[16px] ${fadeClass}`}>
+          <div
+            className={`self-stretch flex flex-col items-start justify-start gap-[16px] ${fadeClass}`}
+          >
             <h1 className="m-[0px] w-[272px] relative text-inherit tracking-[-0.02em] leading-[56px] font-normal font-[inherit] inline-block mq825:text-[32px] mq825:leading-[45px] mq450:text-[32px] mq450:leading-[34px]">
               {buttonData[selectedIndex].label}
             </h1>
@@ -97,7 +100,7 @@ const AboutUs: FunctionComponent<AboutUsType> = ({ className = "" }) => {
             </div>
           </div>
           <button>
-            <div className="w-[154px] h-[48px] shadow-[0px_0px_0px_4px_rgba(33,_33,_33,_0.12),_0px_-2px_0px_#151515_inset,_0px_2px_0px_#343434_inset] rounded-[12px] bg-[#212121] border-[#1b1b1b] border-[1px] border-solid box-border overflow-hidden shrink-0 flex flex-row items-end justify-center gap-[4px] text-[16px] text-[#fff] font-[Inter] mq450:w-[350px] mq450:h-[56px]">
+            <div className="w-[154px] h-[48px] shadow-[0px_0px_0px_4px_rgba(33,_33,_33,_0.12),_0px_-2px_0px_#151515_inset,_0px_2px_0px_#343434_inset] rounded-[12px] bg-[#212121] border-[#1b1b1b] border-[1px] border-solid box-border overflow-hidden shrink-0 flex flex-row items-end justify-center gap-[4px] text-[16px] text-[#fff] font-[Inter] mq450:w-[348px] mq450:h-[56px]">
               <h2 className="m-[0px] cursor-pointer relative pb-3 text-inherit tracking-[-0.01em] leading-[24px] font-medium font-[inherit] inline-block min-w-[66px] mq450:text-[18px] mq450:pb-4">
                 Discover
               </h2>
