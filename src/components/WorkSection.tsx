@@ -27,7 +27,7 @@ const WorkSection: FunctionComponent<WorkSectionType> = ({ className = "" }) => 
     {
       title: "Veterinary App Development",
       description: "PetPal’s mobile app simplifies the process of finding and consulting veterinarians, offering a user-friendly interface and robust functionality. Our development team at Invently is dedicated to building apps that meet the needs of both businesses and their customers.",
-      imageUrl: "/frame-11-1@2x.png",
+      imageUrl: "/frame-11@2x.png",
       width: "487px", // Specific width for large screens
     },
   ];
@@ -48,7 +48,7 @@ const WorkSection: FunctionComponent<WorkSectionType> = ({ className = "" }) => 
           </div>
         </div>
         
-        <div className="flex flex-wrap justify-between gap-[16px] w-full mq450:flex-col mq450:items-center ">
+        <div className="flex flex-wrap justify-between gap-[16px] w-full mq450:flex-col mq450:items-center">
           {workItems.map((item, index) => (
             <div
               key={index}
