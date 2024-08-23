@@ -14,7 +14,7 @@ const MobileSidebar: React.FC<MobileSidebarProps> = ({
   navigationItems,
 }) => (
   <div
-    className={`md:hidden fixed top-0 left-0 right-0 h-[50vh] bg-[url('/public/component-1@3x.png')] transform ${
+    className={`md:hidden fixed top-0 left-0 right-0 h-[auto] bg-[url('/public/component-1@3x.png')] transform ${
       isSidebarOpen ? "translate-y-0" : "-translate-y-full"
     } transition-transform duration-300 ease-in-out z-40`}
   >
