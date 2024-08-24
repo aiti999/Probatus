@@ -44,7 +44,7 @@ const Testimonial: FunctionComponent<TestimonialType> = ({ className = "" }) => 
   return (
     <section
       id="testimonial"
-      className={`flex flex-col items-center justify-start relative left-0 pb-[6.375rem] box-border max-w-full text-left text-[1rem] text-[#605f5f] font-[Inter] ${className}`}
+      className={`flex flex-col items-center justify-start relative left-0 pb-[6.375rem] box-border max-w-full text-left text-[1rem] mq450:h-[760px] text-[#605f5f] font-[Inter] ${className}`}
     >
         <section className="self-stretch flex flex-row items-start justify-center pt-0 px-5 pb-[54px] box-border max-w-full text-center text-gray-600 font-franie">
         <div className="w-[580px] flex flex-col items-start justify-start gap-2 max-w-full">
@@ -57,7 +57,7 @@ const Testimonial: FunctionComponent<TestimonialType> = ({ className = "" }) => 
 
         </div>
       </section>
-      <div className="absolute bottom-24 w-[55%] h-[27.3125rem] top-[8rem] opacity-[62%] rounded-[0.75rem] z-[0] bg-gradient-to-r from-green-300 to-yellow-200 mq450:w-[26rem] mq450:h-[30.125rem] mq450:top-[10rem] mq450:opacity-[52%]"></div>
+      <div className="absolute bottom-24 w-[55%] h-[26.3125rem] top-[8rem] opacity-[62%] rounded-[0.75rem] z-[0] bg-gradient-to-r from-green-300 to-yellow-200 mq450:w-[26rem] mq450:h-[30.125rem] mq450:top-[10rem] mq450:opacity-[52%]"></div>
       <Splide
   options={{
     type: 'loop',
@@ -90,7 +90,7 @@ const Testimonial: FunctionComponent<TestimonialType> = ({ className = "" }) => 
       </SplideSlide>
     ))}
   </SplideTrack>
-  <div className="splide__arrows flex justify-center mt-4 relative top-10 mq450:left-[5%] mq450:top-[14%]">
+  <div className="splide__arrows flex justify-center mt-10 relative top-10 mq450:left-[5%] mq450:top-[14%]">
   <button className="splide__arrow splide__arrow--prev bg-transparent px-[1.25rem] py-[1rem] rounded-md mx-2 top-[22%] left-[46%] mq450:left-[30%] mq450:top-[2%]">
     <img src="/frame-5.svg" alt="Previous" className="w-8 h-8 mq450:w-[2rem] mq450:h-[2rem]"/>
   </button>
