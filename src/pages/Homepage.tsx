@@ -1,11 +1,11 @@
 import React, { FunctionComponent } from "react";
-import HeroBackground from "../components/Hero/HeroBackground";
+import HeroBackground from "../components/HeroBackground";
 import Services from "../components/Services";
 import WorkSection from "../components/WorkSection";
 import Process from "../components/Process";
 import WhyChooseUs from "../components/WhyChooseUs";
 import Testimonial from "../components/Testimonials/Testimonials";
-import Form from "../components/Form/Form";
+import Form from "../components/Form";
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 import AboutUs from "../components/AboutUs";
