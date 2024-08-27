@@ -46,7 +46,7 @@ const Testimonial: FunctionComponent<TestimonialType> = ({ className = "" }) => 
       id="testimonial"
       className={`flex flex-col items-center justify-start relative left-0 pb-[6.375rem] box-border max-w-full text-left text-[1rem] mq450:h-[760px] text-[#605f5f] font-[Inter] ${className}`}
     >
-        <section className="self-stretch flex flex-row items-start justify-center pt-0 px-5 pb-[54px] box-border max-w-full text-center text-gray-600 font-franie">
+        <section className="self-stretch flex flex-row items-start justify-center pt-0 px-5 pb-[54px] box-border max-w-full text-center text-gray-600 Font-franie">
         <div className="w-[580px] flex flex-col items-start justify-start gap-2 max-w-full">
           <div className="self-stretch relative text-[18px] leading-1 mq450:text-[1.13rem]">
             {testimonialData.title}

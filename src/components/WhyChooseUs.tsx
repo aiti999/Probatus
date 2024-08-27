@@ -7,7 +7,7 @@ export type WhyChooseUs = {
 const WhyChooseUs: FunctionComponent<WhyChooseUs> = ({ className = "" }) => {
   return (
     <section id="why-probatus"
-      className={`self-stretch flex flex-row items-start justify-start pt-[0px] px-[0px] pb-[80px] box-border max-w-full text-left text-[40px] text-[#212121] font-[Franie] lg:pb-[52px] lg:box-border mq450:pb-[34px] mq450:box-border ${className}`}
+      className={`self-stretch flex flex-row items-start justify-start pt-[0px] px-[0px] pb-[80px] box-border max-w-full text-left text-[40px] text-[#212121] Font-[Franie] lg:pb-[52px] lg:box-border mq450:pb-[34px] mq450:box-border ${className}`}
     >
       <div className="flex-1 bg-[#f9f9f9] overflow-hidden flex flex-col items-start justify-start p-[80px] box-border max-w-full mq825:py-[52px] mq825:px-[40px] mq825:box-border mq450:pt-[34px] mq450:pb-[34px] mq450:box-border">
         <div className="self-stretch flex flex-row flex-wrap items-start justify-start gap-[32px] max-w-full ">

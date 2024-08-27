@@ -14,7 +14,7 @@ const Process: FunctionComponent<ProcessType> = ({ className = "" }) => {
 
   return (
     <section id="process"
-      className={`self-stretch bg-[#fff] overflow-hidden flex flex-col items-start justify-start py-[108px] px-[80px] box-border max-w-full text-left text-[56px] text-[#212121] font-[Franie] mq825:py-[70px] mq825:px-[40px] mq825:box-border ${className}`}
+      className={`self-stretch bg-[#fff] overflow-hidden flex flex-col items-start justify-start py-[108px] px-[80px] box-border max-w-full text-left text-[56px] text-[#212121] Font-[Franie] mq825:py-[70px] mq825:px-[40px] mq825:box-border ${className}`}
     >
       <div className="self-stretch flex flex-row items-start justify-between max-w-full gap-[20px] mq1400:flex-wrap">
         <div className="w-[547px] flex flex-col items-start justify-start gap-[16px] min-w-[547px] max-w-full mq825:min-w-full mq1400:flex-1">

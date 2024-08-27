@@ -34,7 +34,7 @@ const WorkSection: FunctionComponent<WorkSectionType> = ({ className = "" }) => 
 
   return (
     <section
-      className={`self-stretch overflow-hidden flex flex-col items-center justify-start py-[64px] px-[80px] box-border max-w-full z-[1] text-center text-[56px] text-[#212121] font-[Franie] ${className} mq450:py-[32px] mq450:px-[20px]`}
+      className={`self-stretch overflow-hidden flex flex-col items-center justify-start py-[64px] px-[80px] box-border max-w-full z-[1] text-center text-[56px] text-[#212121] Font-[Franie] ${className} mq450:py-[32px] mq450:px-[20px]`}
     >
       <div className="flex-1 flex flex-col items-center justify-start gap-[64px] mq450:gap-[3px] max-w-full">
         <div className="w-full flex flex-col items-center justify-center gap-[6px] mq450:gap-[0px]">

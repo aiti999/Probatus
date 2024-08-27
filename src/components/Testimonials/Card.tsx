@@ -31,7 +31,7 @@ const Card: FunctionComponent<CardType> = ({
         <div className="self-stretch relative leading-[1.75rem] mq450:text-[1rem] mq450:leading-[1.75rem]">
           {description}
         </div>
-        <div className="w-full flex gap-[14px] mq450:pt-5 flex-row items-center justify-start text-[#18181b] font-[Franie]">
+        <div className="w-full flex gap-[14px] mq450:pt-5 flex-row items-center justify-start text-[#18181b] Font-[Franie]">
           <img
             className="h-[2.5rem] w-[2.5rem] rounded-full object-cover mr-[1rem]"
             loading="lazy"

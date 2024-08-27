@@ -42,10 +42,10 @@ const AboutUs: FunctionComponent<AboutUsType> = ({ className = "" }) => {
   return (
     <section
       id="about"
-      className={`self-stretch overflow-hidden flex flex-col items-start justify-start p-[80px] box-border max-w-full z-[2] text-left text-[40px] text-[#212121] font-[Franie] mq825:pl-[40px] mq825:pr-[40px] mq825:box-border mq450:pt-[52px] mq450:pb-[52px] mq450:box-border ${className}`}
+      className={`self-stretch overflow-hidden flex flex-col items-start justify-start p-[80px] box-border max-w-full z-[2] text-left text-[40px] text-[#212121] Font-[Franie] mq825:pl-[40px] mq825:pr-[40px] mq825:box-border mq450:pt-[52px] mq450:pb-[52px] mq450:box-border ${className}`}
     >
       <div
-        className={`self-stretch flex flex-row items-start justify-between max-w-full gap-[20px] text-left text-[40px] text-[#212121] font-[Franie] mq1400:flex-wrap ${className}`}
+        className={`self-stretch flex flex-row items-start justify-between max-w-full gap-[20px] text-left text-[40px] text-[#212121] Font-[Franie] mq1400:flex-wrap ${className}`}
       >
         <div className="flex flex-col items-start justify-start gap-[24px] min-w-[330px] max-w-full mq1400:flex-1">
           <h1 className="m-[0px] w-[208px] relative text-inherit tracking-[-0.02em] leading-[120%] font-normal font-[inherit] inline-block mq825:text-[32px] mq825:leading-[38px] mq450:text-[34px] mq450:leading-[32px]">

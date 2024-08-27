@@ -10,7 +10,7 @@ const HeroBackground: FunctionComponent<HeroBackground> = ({
 }) => {
   return (
     <div
-      className={`self-stretch flex flex-row items-start justify-center py-[0px] px-[20px] box-border max-w-full shrink-0 text-center text-[56px] text-[#fff] font-[Franie] ${className}`}
+      className={`self-stretch flex flex-row items-start justify-center py-[0px] px-[20px] box-border max-w-full shrink-0 text-center text-[56px] text-[#fff] Font-[Franie] ${className}`}
     >
       <div className="relative w-[740px] flex flex-col items-start justify-start gap-[16px] max-w-full">
         {/* Top Left Light */}
